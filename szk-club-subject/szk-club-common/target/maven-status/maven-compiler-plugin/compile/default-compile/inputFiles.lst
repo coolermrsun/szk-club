@@ -1,4 +1,6 @@
 D:\szk-club\szk-club-subject\szk-club-common\src\main\java\com\szk\subject\common\enums\CategoryTypeEnum.java
 D:\szk-club\szk-club-subject\szk-club-common\src\main\java\com\szk\subject\common\enums\IsDeletedFlagEnum.java
 D:\szk-club\szk-club-subject\szk-club-common\src\main\java\com\szk\subject\common\entity\Result.java
+D:\szk-club\szk-club-subject\szk-club-common\src\main\java\com\szk\subject\common\enums\SubjectInfoTypeEnum.java
 D:\szk-club\szk-club-subject\szk-club-common\src\main\java\com\szk\subject\common\enums\ResultCodeEnum.java
+D:\szk-club\szk-club-subject\szk-club-common\src\main\java\com\szk\subject\common\enums\SubjectLikedStatusEnum.java

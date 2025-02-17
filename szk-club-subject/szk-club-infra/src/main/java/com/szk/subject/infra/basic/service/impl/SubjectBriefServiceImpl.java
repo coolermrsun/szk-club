@@ -16,7 +16,7 @@ import javax.annotation.Resource;
 @Service("subjectBriefService")
 public class SubjectBriefServiceImpl implements SubjectBriefService {
     @Resource
-    private SubjectBriefMapper subjectBriefDao;
+    private SubjectBriefMapper subjectBriefMapper;
 
     /**
      * 通过ID查询单条数据
@@ -26,7 +26,7 @@ public class SubjectBriefServiceImpl implements SubjectBriefService {
      */
     @Override
     public SubjectBrief queryById(Long id) {
-        return this.subjectBriefDao.queryById(id);
+        return this.subjectBriefMapper.queryById(id);
     }
 
     /**
@@ -37,7 +37,7 @@ public class SubjectBriefServiceImpl implements SubjectBriefService {
      */
     @Override
     public SubjectBrief insert(SubjectBrief subjectBrief) {
-        this.subjectBriefDao.insert(subjectBrief);
+        this.subjectBriefMapper.insert(subjectBrief);
         return subjectBrief;
     }
 
@@ -49,7 +49,7 @@ public class SubjectBriefServiceImpl implements SubjectBriefService {
      */
     @Override
     public SubjectBrief update(SubjectBrief subjectBrief) {
-        this.subjectBriefDao.update(subjectBrief);
+        this.subjectBriefMapper.update(subjectBrief);
         return this.queryById(subjectBrief.getId());
     }
 
@@ -61,6 +61,12 @@ public class SubjectBriefServiceImpl implements SubjectBriefService {
      */
     @Override
     public boolean deleteById(Long id) {
-        return this.subjectBriefDao.deleteById(id) > 0;
+        return this.subjectBriefMapper.deleteById(id) > 0;
     }
+
+    @Override
+    public SubjectBrief queryByCondition(SubjectBrief subjectBrief) {
+        return this.subjectBriefMapper.queryAllByLimit(subjectBrief);
+    }
+
 }

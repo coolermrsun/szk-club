@@ -1,5 +1,6 @@
 package com.szk.subject.infra.basic.service;
 
+
 import com.szk.subject.infra.basic.entity.SubjectBrief;
 
 /**
@@ -41,4 +42,5 @@ public interface SubjectBriefService {
      */
     boolean deleteById(Long id);
 
+    SubjectBrief queryByCondition(SubjectBrief subjectBrief);
 }

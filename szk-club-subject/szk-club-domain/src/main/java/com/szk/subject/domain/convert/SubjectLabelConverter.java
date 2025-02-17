@@ -5,6 +5,9 @@ import com.szk.subject.infra.basic.entity.SubjectLabel;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
 
+import java.util.List;
+
+
 @Mapper
 public interface SubjectLabelConverter {
 
@@ -12,4 +15,5 @@ public interface SubjectLabelConverter {
 
     SubjectLabel convertBoToLabel(SubjectLabelBO subjectLabelBO);
 
+    List<SubjectLabelBO> convertLabelToBoList(List<SubjectLabel> subjectLabelList);
 }

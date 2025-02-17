@@ -68,4 +68,9 @@ public class SubjectMappingServiceImpl implements SubjectMappingService {
     public List<SubjectMapping> queryLabelId(SubjectMapping subjectMapping) {
         return this.subjectMappingMapper.queryDistinctLabelId(subjectMapping);
     }
+
+    @Override
+    public void batchInsert(List<SubjectMapping> mappingList) {
+        this.subjectMappingMapper.insertBatch(mappingList);
+    }
 }

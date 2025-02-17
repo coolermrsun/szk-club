@@ -8,7 +8,7 @@ import javax.annotation.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-02-17T15:06:31+0600",
+    date = "2025-02-17T21:06:57+0600",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 1.8.0_432 (Amazon.com Inc.)"
 )
 public class SubjectCategoryConverterImpl implements SubjectCategoryConverter {
@@ -27,13 +27,13 @@ public class SubjectCategoryConverterImpl implements SubjectCategoryConverter {
     }
 
     @Override
-    public List<SubjectCategoryBO> convertBoToCategory(List<SubjectCategory> CategoryList) {
-        if ( CategoryList == null ) {
+    public List<SubjectCategoryBO> convertBoToCategory(List<SubjectCategory> categoryList) {
+        if ( categoryList == null ) {
             return null;
         }
 
-        List<SubjectCategoryBO> list = new ArrayList<SubjectCategoryBO>( CategoryList.size() );
-        for ( SubjectCategory subjectCategory : CategoryList ) {
+        List<SubjectCategoryBO> list = new ArrayList<SubjectCategoryBO>( categoryList.size() );
+        for ( SubjectCategory subjectCategory : categoryList ) {
             list.add( subjectCategoryToSubjectCategoryBO( subjectCategory ) );
         }
 

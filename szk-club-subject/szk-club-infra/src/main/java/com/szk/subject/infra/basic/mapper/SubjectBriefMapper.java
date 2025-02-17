@@ -21,6 +21,14 @@ public interface SubjectBriefMapper {
     SubjectBrief queryById(Long id);
 
     /**
+     * 查询指定行数据
+     *
+     * @param subjectBrief 查询条件
+     * @return 对象列表
+     */
+    SubjectBrief queryAllByLimit(SubjectBrief subjectBrief);
+
+    /**
      * 统计总行数
      *
      * @param subjectBrief 查询条件
