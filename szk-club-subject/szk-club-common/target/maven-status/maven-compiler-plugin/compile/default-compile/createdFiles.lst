@@ -1,0 +1,4 @@
+com\szk\subject\common\enums\CategoryTypeEnum.class
+com\szk\subject\common\entity\Result.class
+com\szk\subject\common\enums\IsDeletedFlagEnum.class
+com\szk\subject\common\enums\ResultCodeEnum.class

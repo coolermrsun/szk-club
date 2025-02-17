@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="szk-club-application-controller" />
+        <module name="szk-club-domain" />
+        <module name="szk-club-application-job" />
+        <module name="szk-club-subject-api" />
+        <module name="szk-club-starter" />
+        <module name="szk-club-common" />
+        <module name="szk-club-application-mq" />
+        <module name="szk-club-infra" />
+      </profile>
+    </annotationProcessing>
+  </component>
+</project>
