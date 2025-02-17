@@ -93,7 +93,9 @@
             </if>
         </where>
     </select>
+
     <select id="queryDistinctLabelId" resultMap="SubjectMappingMap">
+        select
         distinct label_id
         from subject_mapping
         <where>
@@ -125,7 +127,6 @@
                 and is_deleted = #{isDeleted}
             </if>
         </where>
-        limit #{pageable.offset}, #{pageable.pageSize}
     </select>
 
     <!--新增所有列-->

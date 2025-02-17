@@ -74,8 +74,9 @@ public  class SubjectLabelDomainServiceImpl implements SubjectLabelDomainService
         labelList.forEach(label -> {
             SubjectLabelBO bo = new SubjectLabelBO();
             bo.setId(label.getId());
-            bo.setLabelName(bo.getLabelName());
+            bo.setLabelName(label.getLabelName());
             bo.setCategoryId(categoryId);
+            bo.setSortNum(label.getSortNum());
             boList.add(bo);
         });
         return boList;

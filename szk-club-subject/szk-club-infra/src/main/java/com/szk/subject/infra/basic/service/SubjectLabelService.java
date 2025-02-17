@@ -1,6 +1,7 @@
 package com.szk.subject.infra.basic.service;
 
 import com.szk.subject.infra.basic.entity.SubjectLabel;
+import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -43,5 +44,5 @@ public interface SubjectLabelService {
      */
     boolean deleteById(Long id);
 
-    List<SubjectLabel> batchQueryById(List<Long> labelIdList);
+    List<SubjectLabel> batchQueryById(@Param("list") List<Long> labelIdList);
 }
