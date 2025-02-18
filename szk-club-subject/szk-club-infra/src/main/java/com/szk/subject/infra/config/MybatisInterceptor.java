@@ -1,7 +1,6 @@
 package com.szk.subject.infra.config;
 
 import lombok.extern.slf4j.Slf4j;
-import org.apache.commons.lang3.StringUtils;
 import org.apache.ibatis.executor.Executor;
 import org.apache.ibatis.mapping.MappedStatement;
 import org.apache.ibatis.mapping.SqlCommandType;
@@ -14,7 +13,7 @@ import java.util.*;
 /**
  * 填充createBy,createTime等公共字段的拦截器
  *
- * @author: ChickenWing
+ * @author: szk
  * @date: 2024/1/5
  */
 @Component

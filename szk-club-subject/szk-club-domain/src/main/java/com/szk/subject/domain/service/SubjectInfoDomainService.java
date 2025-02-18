@@ -6,7 +6,7 @@ import com.szk.subject.domain.entity.SubjectInfoBO;
 /**
  * 题目领域服务
  * 
- * @author: ChickenWing
+ * @author: szk
  * @date: 2023/10/3
  */
 public interface SubjectInfoDomainService {

@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * 题目信息dto转换器
  *
- * @author: ChickenWing
+ * @author: szk
  * @date: 2023/10/8
  */
 @Mapper

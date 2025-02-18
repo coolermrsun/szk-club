@@ -7,13 +7,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="szk-club-application-controller" />
         <module name="szk-club-domain" />
-        <module name="szk-club-application-job" />
+        <module name="szk-club-auth-common" />
+        <module name="szk-club-auth-application-controller" />
         <module name="szk-club-subject-api" />
         <module name="szk-club-starter" />
         <module name="szk-club-common" />
+        <module name="szk-club-auth-application-mq" />
         <module name="szk-club-application-mq" />
+        <module name="szk-club-auth-application" />
+        <module name="szk-club-auth-domain" />
+        <module name="szk-club-application-controller" />
+        <module name="szk-club-application-job" />
+        <module name="szk-club-auth-starter" />
+        <module name="szk-club-oss" />
+        <module name="szk-club-auth-api" />
+        <module name="szk-club-auth-infra" />
+        <module name="szk-club-auth-application-job" />
         <module name="szk-club-infra" />
       </profile>
     </annotationProcessing>

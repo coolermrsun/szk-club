@@ -14,7 +14,7 @@ import javax.annotation.Resource;
 /**
  * 简答题目的策略类
  * 
- * @author: ChickenWing
+ * @author: szk
  * @date: 2023/10/5
  */
 @Component

@@ -6,6 +6,8 @@
       <list>
         <option value="$PROJECT_DIR$/szk-club-subject/pom.xml" />
         <option value="$PROJECT_DIR$/szk-club-subject/szk-club-application/pom.xml" />
+        <option value="$PROJECT_DIR$/szk-club-oss/pom.xml" />
+        <option value="$PROJECT_DIR$/szk-club-auth/pom.xml" />
       </list>
     </option>
   </component>
