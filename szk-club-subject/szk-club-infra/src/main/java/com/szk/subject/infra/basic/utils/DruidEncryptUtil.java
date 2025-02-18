@@ -1,4 +1,4 @@
-package com.szk.subject.infra.utils;
+package com.szk.subject.infra.basic.utils;
 
 import com.alibaba.druid.filter.config.ConfigTools;
 

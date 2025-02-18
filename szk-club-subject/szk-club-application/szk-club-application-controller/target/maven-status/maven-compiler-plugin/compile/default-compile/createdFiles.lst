@@ -10,6 +10,7 @@ com\szk\subject\application\convert\SubjectInfoDTOConverterImpl.class
 com\szk\subject\application\convert\SubjectCategoryDTOConverterImpl.class
 com\szk\subject\application\controller\SubjectController.class
 com\szk\subject\application\dto\SubjectCategoryDTO.class
+com\szk\subject\application\config\GlobalConfig.class
 com\szk\subject\application\controller\SubjectLabelController.class
 com\szk\subject\application\convert\SubjectLabelDTOConverterImpl.class
 com\szk\subject\application\dto\SubjectAnswerDTO.class

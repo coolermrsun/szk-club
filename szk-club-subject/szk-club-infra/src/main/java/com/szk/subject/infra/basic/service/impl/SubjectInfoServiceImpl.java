@@ -6,6 +6,7 @@ import com.szk.subject.infra.basic.service.SubjectInfoService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
 
 /**
  * 题目信息表(SubjectInfo)表服务实现类
@@ -16,7 +17,7 @@ import javax.annotation.Resource;
 @Service("subjectInfoService")
 public class SubjectInfoServiceImpl implements SubjectInfoService {
     @Resource
-    private SubjectInfoMapper subjectInfoDao;
+    private SubjectInfoMapper subjectInfoMapper;
 
     /**
      * 通过ID查询单条数据
@@ -26,7 +27,7 @@ public class SubjectInfoServiceImpl implements SubjectInfoService {
      */
     @Override
     public SubjectInfo queryById(Long id) {
-        return this.subjectInfoDao.queryById(id);
+        return this.subjectInfoMapper.queryById(id);
     }
 
 
@@ -38,7 +39,7 @@ public class SubjectInfoServiceImpl implements SubjectInfoService {
      */
     @Override
     public SubjectInfo insert(SubjectInfo subjectInfo) {
-        this.subjectInfoDao.insert(subjectInfo);
+        this.subjectInfoMapper.insert(subjectInfo);
         return subjectInfo;
     }
 
@@ -50,7 +51,7 @@ public class SubjectInfoServiceImpl implements SubjectInfoService {
      */
     @Override
     public SubjectInfo update(SubjectInfo subjectInfo) {
-        this.subjectInfoDao.update(subjectInfo);
+        this.subjectInfoMapper.update(subjectInfo);
         return this.queryById(subjectInfo.getId());
     }
 
@@ -62,6 +63,16 @@ public class SubjectInfoServiceImpl implements SubjectInfoService {
      */
     @Override
     public boolean deleteById(Long id) {
-        return this.subjectInfoDao.deleteById(id) > 0;
+        return this.subjectInfoMapper.deleteById(id) > 0;
+    }
+
+    @Override
+    public int countByCondition(SubjectInfo subjectInfo, Long categoryId, Long labelId) {
+        return this.subjectInfoMapper.countByCondition(subjectInfo, categoryId, labelId);
+    }
+
+    @Override
+    public List<SubjectInfo> queryPage(SubjectInfo subjectInfo, Long categoryId, Long labelId, int start, Integer pageSize) {
+        return this.subjectInfoMapper.queryPage(subjectInfo, categoryId, labelId, start, pageSize);
     }
 }

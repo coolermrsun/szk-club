@@ -96,7 +96,6 @@ id, category_name, category_type, image_url, parent_id, created_by, created_time
                 and is_deleted = #{isDeleted}
             </if>
         </where>
-        limit #{pageable.offset}, #{pageable.pageSize}
     </select>
 
     <!--统计总行数-->

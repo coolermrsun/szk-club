@@ -68,5 +68,4 @@ public class SubjectBriefServiceImpl implements SubjectBriefService {
     public SubjectBrief queryByCondition(SubjectBrief subjectBrief) {
         return this.subjectBriefMapper.queryAllByLimit(subjectBrief);
     }
-
 }

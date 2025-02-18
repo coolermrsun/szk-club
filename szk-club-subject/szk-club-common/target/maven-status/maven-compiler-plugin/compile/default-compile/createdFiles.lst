@@ -1,6 +1,8 @@
 com\szk\subject\common\enums\CategoryTypeEnum.class
-com\szk\subject\common\enums\SubjectInfoTypeEnum.class
-com\szk\subject\common\entity\Result.class
 com\szk\subject\common\enums\IsDeletedFlagEnum.class
 com\szk\subject\common\enums\SubjectLikedStatusEnum.class
 com\szk\subject\common\enums\ResultCodeEnum.class
+com\szk\subject\common\enums\SubjectInfoTypeEnum.class
+com\szk\subject\common\entity\PageResult.class
+com\szk\subject\common\entity\Result.class
+com\szk\subject\common\entity\PageInfo.class

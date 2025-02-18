@@ -4,3 +4,5 @@ D:\szk-club\szk-club-subject\szk-club-common\src\main\java\com\szk\subject\commo
 D:\szk-club\szk-club-subject\szk-club-common\src\main\java\com\szk\subject\common\enums\SubjectInfoTypeEnum.java
 D:\szk-club\szk-club-subject\szk-club-common\src\main\java\com\szk\subject\common\enums\ResultCodeEnum.java
 D:\szk-club\szk-club-subject\szk-club-common\src\main\java\com\szk\subject\common\enums\SubjectLikedStatusEnum.java
+D:\szk-club\szk-club-subject\szk-club-common\src\main\java\com\szk\subject\common\entity\PageResult.java
+D:\szk-club\szk-club-subject\szk-club-common\src\main\java\com\szk\subject\common\entity\PageInfo.java

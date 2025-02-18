@@ -1,5 +1,6 @@
 package com.szk.subject.domain.entity;
 
+import com.szk.subject.common.entity.PageInfo;
 import lombok.Data;
 
 import java.io.Serializable;
@@ -12,7 +13,7 @@ import java.util.List;
  * @since 2025-02-17 15:57:10
  */
 @Data
-public class SubjectInfoBO implements Serializable {
+public class SubjectInfoBO extends PageInfo implements Serializable {
     private static final long serialVersionUID = 802124656573658600L;
     /**
      * 主键
@@ -57,11 +58,57 @@ public class SubjectInfoBO implements Serializable {
      * 标签id
      */
     private List<Integer> labelIds;
+    /**
+     * 标签name
+     */
+    private List<String> labelName;
 
     /**
      * 答案选项
      */
     private List<SubjectAnswerBO> optionList;
 
+    private Long categoryId;
+
+    private Long labelId;
+
+    private String keyWord;
+
+
+    /**
+     * 创建人昵称
+     */
+    private String createUser;
+
+    /**
+     * 创建人头像
+     */
+    private String createUserAvatar;
+
+    /**
+     * 题目数量
+     */
+    private Integer subjectCount;
+
+
+    /**
+     * 是否被当前用户点赞
+     */
+    private Boolean liked;
+
+    /**
+     * 当前题目点赞的数量
+     */
+    private Integer likedCount;
+
+    /**
+     * 下一题
+     */
+    private Long nextSubjectId;
+
+    /**
+     * 上一题
+     */
+    private Long lastSubjectId;
 }
 
