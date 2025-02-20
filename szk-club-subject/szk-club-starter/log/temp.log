@@ -1,0 +1,15 @@
+16:29:08.554  [main] INFO  com.szk.subject.SubjectApplication - Starting SubjectApplication using Java 1.8.0_432 on DESKTOP-FR194O0 with PID 36148 (D:\szk-club\szk-club-subject\szk-club-starter\target\szk-club-starter.jar started by ÀÔ÷¶¿§ in D:\szk-club\szk-club-subject\szk-club-starter\target)
+16:29:08.586  [main] INFO  com.szk.subject.SubjectApplication - No active profile set, falling back to default profiles: default
+16:29:09.783  [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 3000 (http)
+16:29:09.792  [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-3000"]
+16:29:09.792  [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+16:29:09.793  [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.41]
+16:29:09.877  [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+16:29:09.878  [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1251 ms
+16:29:09.967  [main] INFO  com.alibaba.druid.spring.boot.autoconfigure.DruidDataSourceAutoConfigure - Init DruidDataSource
+16:29:16.549  [main] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} inited
+16:29:17.412  [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-3000"]
+16:29:17.440  [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 3000 (http) with context path ''
+16:29:17.451  [main] INFO  com.szk.subject.SubjectApplication - Started SubjectApplication in 9.313 seconds (JVM running for 9.994)
+16:29:29.664  [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closing ...
+16:29:29.673  [SpringContextShutdownHook] INFO  com.alibaba.druid.pool.DruidDataSource - {dataSource-1} closed
