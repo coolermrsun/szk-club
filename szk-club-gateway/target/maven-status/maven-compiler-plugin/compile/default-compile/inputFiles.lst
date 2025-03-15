@@ -1,0 +1,10 @@
+D:\szk-club\szk-club-gateway\src\main\java\com\szk\club\gateway\auth\SaTokenConfigure.java
+D:\szk-club\szk-club-gateway\src\main\java\com\szk\club\gateway\auth\StpInterfaceImpl.java
+D:\szk-club\szk-club-gateway\src\main\java\com\szk\club\gateway\entity\AuthPermission.java
+D:\szk-club\szk-club-gateway\src\main\java\com\szk\club\gateway\entity\AuthRole.java
+D:\szk-club\szk-club-gateway\src\main\java\com\szk\club\gateway\entity\Result.java
+D:\szk-club\szk-club-gateway\src\main\java\com\szk\club\gateway\enums\ResultCodeEnum.java
+D:\szk-club\szk-club-gateway\src\main\java\com\szk\club\gateway\exception\GatewayExceptionHandler.java
+D:\szk-club\szk-club-gateway\src\main\java\com\szk\club\gateway\GatewayApplication.java
+D:\szk-club\szk-club-gateway\src\main\java\com\szk\club\gateway\redis\RedisConfig.java
+D:\szk-club\szk-club-gateway\src\main\java\com\szk\club\gateway\redis\RedisUtil.java

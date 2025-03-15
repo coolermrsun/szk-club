@@ -3,6 +3,7 @@ package com.szk.subject.application.dto;
 import lombok.Data;
 
 import java.io.Serializable;
+import java.util.List;
 
 /**
  * 题目分类(SubjectCategory)实体类
@@ -14,25 +15,38 @@ import java.io.Serializable;
 public class SubjectCategoryDTO implements Serializable {
     private static final long serialVersionUID = 281213603287698155L;
 
+    /**
+     * 主键
+     */
     private Long id;
 
     /**
      * 分类名称
      */
-    private String category_name;
+    private String categoryName;
 
     /**
      * 分类类型
      */
-    private Integer category_type;
+    private Integer categoryType;
 
     /**
      * 图标连接
      */
-    private String image_url;
+    private String imageUrl;
 
     /**
      * 父级id
      */
-    private Long parent_id;
+    private Long parentId;
+
+    /**
+     * 数量
+     */
+    private Integer count;
+
+    /**
+     * 标签信息
+     */
+    private List<SubjectLabelDTO> labelDTOList;
 }

@@ -12,6 +12,7 @@
         <module name="szk-club-auth-application-controller" />
         <module name="szk-club-subject-api" />
         <module name="szk-club-starter" />
+        <module name="szk-club-gateway" />
         <module name="szk-club-common" />
         <module name="szk-club-auth-application-mq" />
         <module name="szk-club-application-mq" />
@@ -19,6 +20,7 @@
         <module name="szk-club-auth-domain" />
         <module name="szk-club-application-controller" />
         <module name="szk-club-application-job" />
+        <module name="szk-club-wx" />
         <module name="szk-club-auth-starter" />
         <module name="szk-club-oss" />
         <module name="szk-club-auth-api" />
@@ -27,5 +29,10 @@
         <module name="szk-club-infra" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="szk-club-gateway" options="" />
+    </option>
   </component>
 </project>

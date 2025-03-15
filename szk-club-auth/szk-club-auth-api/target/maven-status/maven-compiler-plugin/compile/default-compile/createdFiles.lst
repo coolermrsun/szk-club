@@ -1,0 +1,4 @@
+com\szk\auth\api\UserFeignService.class
+com\szk\auth\entity\ResultCodeEnum.class
+com\szk\auth\entity\Result.class
+com\szk\auth\entity\AuthUserDTO.class

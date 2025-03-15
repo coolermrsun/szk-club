@@ -71,4 +71,9 @@ public class SubjectCategoryServiceImpl implements SubjectCategoryService {
         return this.subjectCategoryMapper.queryCategory(subjectCategory);
     }
 
+    @Override
+    public Integer querySubjectCount(Long id) {
+        return this.subjectCategoryMapper.querySubjectCount(id);
+    }
+
 }

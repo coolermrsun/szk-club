@@ -54,5 +54,6 @@ public interface SubjectCategoryMapper {
      */
     int deleteById(Long id);
 
+    Integer querySubjectCount(Long id);
 }
 

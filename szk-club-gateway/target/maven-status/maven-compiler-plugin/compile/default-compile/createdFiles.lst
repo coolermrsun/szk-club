@@ -1,0 +1,12 @@
+com\szk\club\gateway\auth\StpInterfaceImpl$2.class
+com\szk\club\gateway\entity\AuthPermission.class
+com\szk\club\gateway\auth\SaTokenConfigure.class
+com\szk\club\gateway\exception\GatewayExceptionHandler.class
+com\szk\club\gateway\auth\StpInterfaceImpl$1.class
+com\szk\club\gateway\entity\Result.class
+com\szk\club\gateway\enums\ResultCodeEnum.class
+com\szk\club\gateway\GatewayApplication.class
+com\szk\club\gateway\auth\StpInterfaceImpl.class
+com\szk\club\gateway\redis\RedisUtil.class
+com\szk\club\gateway\entity\AuthRole.class
+com\szk\club\gateway\redis\RedisConfig.class

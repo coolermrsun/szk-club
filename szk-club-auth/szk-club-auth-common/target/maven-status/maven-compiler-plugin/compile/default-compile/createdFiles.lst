@@ -1,0 +1,4 @@
+com\szk\auth\common\enums\IsDeletedFlagEnum.class
+com\szk\auth\common\entity\PageInfo.class
+com\szk\auth\common\enums\AuthUserStatusEnum.class
+com\szk\auth\common\entity\PageResult.class
