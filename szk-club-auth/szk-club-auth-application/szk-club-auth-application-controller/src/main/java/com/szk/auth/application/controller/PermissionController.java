@@ -19,7 +19,7 @@ import javax.annotation.Resource;
  * 权限controller
  *
  * @author: szk
- * @date: 2023/11/2
+2023/11/2
  */
 @RestController
 @RequestMapping("/permission/")

@@ -10,7 +10,7 @@ import java.util.List;
  * 用户领域service
  *
  * @author: szk
- * @date: 2023/11/1
+2023/11/1
  */
 public interface AuthUserDomainService {
 

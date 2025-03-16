@@ -8,7 +8,7 @@ import java.io.Serializable;
  * 权限dto
  * 
  * @author: szk
- * @date: 2023/11/3
+2023/11/3
  */
 @Data
 public class AuthPermissionDTO implements Serializable {

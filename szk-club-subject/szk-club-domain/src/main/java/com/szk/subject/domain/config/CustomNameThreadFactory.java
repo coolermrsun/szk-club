@@ -8,8 +8,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * 自定义名称的线程工厂
  *
- * @author: ChickenWing
- * @date: 2023/11/26
+ * @author: szk
  */
 public class CustomNameThreadFactory implements ThreadFactory {
 

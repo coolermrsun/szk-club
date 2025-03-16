@@ -9,7 +9,7 @@ import com.szk.auth.domain.entity.AuthPermissionBO;
  * 权限dto转换器
  * 
  * @author: szk
- * @date: 2023/10/8
+2023/10/8
  */
 @Mapper
 public interface AuthPermissionDTOConverter {

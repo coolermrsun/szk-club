@@ -19,7 +19,7 @@ import java.util.stream.Collectors;
  * 自定义权限验证接口扩展
  *
  * @author: szk
- * @date: 2023/10/28
+
  */
 @Component
 public class StpInterfaceImpl implements StpInterface {

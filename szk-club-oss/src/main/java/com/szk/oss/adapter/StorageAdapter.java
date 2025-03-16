@@ -10,7 +10,7 @@ import java.util.List;
  * 文件存储适配器
  * 
  * @author: szk
- * @date: 2025/2/14
+2025/2/14
  */
 public interface StorageAdapter {
 

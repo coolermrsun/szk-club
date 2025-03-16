@@ -13,7 +13,7 @@ import java.util.Map;
  * 题目类型工厂
  *
  * @author: szk
- * @date: 2023/10/5
+
  */
 @Component
 public class SubjectTypeHandlerFactory implements InitializingBean {

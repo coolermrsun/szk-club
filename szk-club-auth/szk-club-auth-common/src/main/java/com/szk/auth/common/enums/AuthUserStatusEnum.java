@@ -6,7 +6,7 @@ import lombok.Getter;
  * 用户状态枚举
  * 
  * @author: szk
- * @date: 2023/10/3
+2023/10/3
  */
 @Getter
 public enum AuthUserStatusEnum {

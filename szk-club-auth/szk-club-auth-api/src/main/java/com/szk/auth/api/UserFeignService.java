@@ -13,7 +13,7 @@ import java.util.List;
  * 用户服务feign
  *
  * @author: szk
- * @date: 2023/12/3
+2023/12/3
  */
 @FeignClient("szk-club-auth-dev")
 public interface UserFeignService {

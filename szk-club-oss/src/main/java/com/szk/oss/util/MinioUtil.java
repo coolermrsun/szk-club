@@ -17,7 +17,7 @@ import java.util.stream.Collectors;
  * minio文件操作工具
  *
  * @author: szk
- * @date: 2023/10/11
+
  */
 @Component
 public class MinioUtil {

@@ -11,7 +11,7 @@ import java.util.List;
  * 阿里云oss适配器
  *
  * @author: szk
- * @date: 2025/2/14
+2025/2/14
  */
 public class AliStorageAdapter implements StorageAdapter {
 

@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Configuration;
 /**
  * 文件存储config
  *
- * @date: 2025/2/14
+2025/2/14
  */
 @Configuration
 @RefreshScope

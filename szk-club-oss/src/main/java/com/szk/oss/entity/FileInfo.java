@@ -6,7 +6,7 @@ import lombok.Data;
  * 文件类
  * 
  * @author: szk
- * @date: 2023/10/12
+
  */
 @Data
 public class FileInfo {

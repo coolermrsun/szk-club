@@ -18,7 +18,7 @@ import java.util.List;
  * 单选题目的策略类
  *
  * @author: szk
- * @date: 2023/10/5
+
  */
 @Component
 public class RadioTypeHandler implements SubjectTypeHandler {

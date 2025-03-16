@@ -16,7 +16,7 @@ import java.util.List;
  * mvc的全局处理
  *
  * @author: szk
- * @date: 2023/10/7
+
  */
 @Configuration
 public class GlobalConfig extends WebMvcConfigurationSupport {

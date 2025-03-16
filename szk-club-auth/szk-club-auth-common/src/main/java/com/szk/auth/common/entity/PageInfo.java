@@ -4,7 +4,7 @@ package com.szk.auth.common.entity;
  * 分页请求实体
  *
  * @author: szk
- * @date: 2023/10/5
+
  */
 public class PageInfo {
 

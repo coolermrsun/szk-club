@@ -113,9 +113,15 @@ public  class SubjectCategoryDomainServiceImpl implements SubjectCategoryDomainS
         }
         List<SubjectCategoryBO> categoryBOList = SubjectCategoryConverter.INSTANCE.convertBoToCategory(subjectCategoryList);
         Map<Long, List<SubjectLabelBO>> map = new HashMap<>();
+        /**
+         *   通过多线程进行查询，每个线程都执行通一个函数getLabelBOList，最后收集为一个map列表
+         */
         List<CompletableFuture<Map<Long, List<SubjectLabelBO>>>> completableFutureList = categoryBOList.stream().map(category ->
                 CompletableFuture.supplyAsync(() -> getLabelBOList(category), labelThreadPool)
         ).collect(Collectors.toList());
+        /**
+         * 获取每一个future中的结果，放入新的map
+         */
         completableFutureList.forEach(future -> {
             try {
                 Map<Long, List<SubjectLabelBO>> resultMap = future.get();
@@ -134,6 +140,11 @@ public  class SubjectCategoryDomainServiceImpl implements SubjectCategoryDomainS
         return categoryBOList;
     }
 
+    /**
+     * 装有标签类的一个map，与底层逻辑进行交互
+     * @param category
+     * @return
+     */
     private Map<Long, List<SubjectLabelBO>> getLabelBOList(SubjectCategoryBO category) {
         if (log.isInfoEnabled()) {
             log.info("getLabelBOList:{}", JSON.toJSONString(category));

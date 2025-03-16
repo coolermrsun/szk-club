@@ -9,7 +9,7 @@ import java.util.List;
  * 角色领域service
  * 
  * @author: szk
- * @date: 2023/11/1
+2023/11/1
  */
 public interface AuthPermissionDomainService {
 

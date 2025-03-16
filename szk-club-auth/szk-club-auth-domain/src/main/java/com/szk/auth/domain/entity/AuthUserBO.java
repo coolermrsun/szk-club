@@ -8,7 +8,7 @@ import java.io.Serializable;
  * 用戶信息dto
  *
  * @author: szk
- * @date: 2023/11/1
+2023/11/1
  */
 @Data
 public class AuthUserBO implements Serializable {
