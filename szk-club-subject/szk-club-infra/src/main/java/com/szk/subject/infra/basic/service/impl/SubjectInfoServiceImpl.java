@@ -1,7 +1,7 @@
 package com.szk.subject.infra.basic.service.impl;
 
 import com.szk.subject.infra.basic.entity.SubjectInfo;
-import com.szk.subject.infra.basic.mapper.SubjectInfoMapper;
+import com.szk.subject.infra.basic.mapper.SubjectInfoDao;
 import com.szk.subject.infra.basic.service.SubjectInfoService;
 import org.springframework.stereotype.Service;
 
@@ -12,12 +12,12 @@ import java.util.List;
  * 题目信息表(SubjectInfo)表服务实现类
  *
  * @author makejava
- * @since 2025-02-17 15:57:10
+ * @since 2023-10-05 21:28:58
  */
 @Service("subjectInfoService")
 public class SubjectInfoServiceImpl implements SubjectInfoService {
     @Resource
-    private SubjectInfoMapper subjectInfoMapper;
+    private SubjectInfoDao subjectInfoDao;
 
     /**
      * 通过ID查询单条数据
@@ -27,9 +27,8 @@ public class SubjectInfoServiceImpl implements SubjectInfoService {
      */
     @Override
     public SubjectInfo queryById(Long id) {
-        return this.subjectInfoMapper.queryById(id);
+        return this.subjectInfoDao.queryById(id);
     }
-
 
     /**
      * 新增数据
@@ -39,7 +38,7 @@ public class SubjectInfoServiceImpl implements SubjectInfoService {
      */
     @Override
     public SubjectInfo insert(SubjectInfo subjectInfo) {
-        this.subjectInfoMapper.insert(subjectInfo);
+        this.subjectInfoDao.insert(subjectInfo);
         return subjectInfo;
     }
 
@@ -51,7 +50,7 @@ public class SubjectInfoServiceImpl implements SubjectInfoService {
      */
     @Override
     public SubjectInfo update(SubjectInfo subjectInfo) {
-        this.subjectInfoMapper.update(subjectInfo);
+        this.subjectInfoDao.update(subjectInfo);
         return this.queryById(subjectInfo.getId());
     }
 
@@ -63,16 +62,27 @@ public class SubjectInfoServiceImpl implements SubjectInfoService {
      */
     @Override
     public boolean deleteById(Long id) {
-        return this.subjectInfoMapper.deleteById(id) > 0;
+        return this.subjectInfoDao.deleteById(id) > 0;
     }
 
     @Override
     public int countByCondition(SubjectInfo subjectInfo, Long categoryId, Long labelId) {
-        return this.subjectInfoMapper.countByCondition(subjectInfo, categoryId, labelId);
+        return this.subjectInfoDao.countByCondition(subjectInfo, categoryId, labelId);
     }
 
     @Override
     public List<SubjectInfo> queryPage(SubjectInfo subjectInfo, Long categoryId, Long labelId, int start, Integer pageSize) {
-        return this.subjectInfoMapper.queryPage(subjectInfo, categoryId, labelId, start, pageSize);
+        return this.subjectInfoDao.queryPage(subjectInfo, categoryId, labelId, start, pageSize);
     }
+
+    @Override
+    public List<SubjectInfo> getContributeCount() {
+        return this.subjectInfoDao.getContributeCount();
+    }
+
+    @Override
+    public Long querySubjectIdCursor(Long subjectId, Long categoryId, Long labelId, int cursor) {
+        return this.subjectInfoDao.querySubjectIdCursor(subjectId, categoryId, labelId, cursor);
+    }
+
 }

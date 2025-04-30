@@ -8,7 +8,7 @@ import java.util.List;
  * 题目信息表(SubjectInfo)表服务接口
  *
  * @author makejava
- * @since 2025-02-17 15:57:10
+ * @since 2023-10-05 21:28:58
  */
 public interface SubjectInfoService {
 
@@ -48,5 +48,8 @@ public interface SubjectInfoService {
 
     List<SubjectInfo> queryPage(SubjectInfo subjectInfo, Long categoryId, Long labelId, int start, Integer pageSize);
 
+    List<SubjectInfo> getContributeCount();
+
+    Long querySubjectIdCursor(Long subjectId, Long categoryId, Long labelId, int cursor);
 
 }

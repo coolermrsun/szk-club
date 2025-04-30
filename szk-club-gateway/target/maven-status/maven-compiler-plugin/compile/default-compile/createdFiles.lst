@@ -1,5 +1,6 @@
 com\szk\club\gateway\auth\StpInterfaceImpl$2.class
 com\szk\club\gateway\entity\AuthPermission.class
+com\szk\club\gateway\filter\LoginFilter.class
 com\szk\club\gateway\auth\SaTokenConfigure.class
 com\szk\club\gateway\exception\GatewayExceptionHandler.class
 com\szk\club\gateway\auth\StpInterfaceImpl$1.class

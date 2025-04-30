@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="Encoding" native2AsciiForPropertiesFiles="true" defaultCharsetForPropertiesFiles="UTF-8">
+  <component name="Encoding">
     <file url="file://$PROJECT_DIR$/szk-club-auth/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/szk-club-auth/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/szk-club-auth/szk-club-auth-api/src/main/java" charset="UTF-8" />
@@ -21,14 +21,17 @@
     <file url="file://$PROJECT_DIR$/szk-club-auth/szk-club-auth-infra/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/szk-club-auth/szk-club-auth-starter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/szk-club-auth/szk-club-auth-starter/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/szk-club-gateway/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/szk-club-gateway/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/szk-club-gen/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/szk-club-oss/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/szk-club-oss/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/szk-club-subject/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/szk-club-subject/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/szk-club-subject/szk-club-application/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/szk-club-subject/szk-club-application/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-job/src/main/java" charset="UTF-8" />
@@ -36,12 +39,8 @@
     <file url="file://$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-mq/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-mq/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/szk-club-subject/szk-club-common/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/szk-club-subject/szk-club-common/src/main/java/com/szk/subject/common/entity/Result.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/szk-club-subject/szk-club-common/src/main/resources" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/impl/SubjectCategoryServiceImpl.java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/resources" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/szk-club-subject/szk-club-starter/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/szk-club-subject/szk-club-starter/src/main/resources" charset="UTF-8" />

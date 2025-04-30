@@ -8,7 +8,7 @@ import java.util.List;
  * 判断题(SubjectJudge)表服务接口
  *
  * @author makejava
- * @since 2025-02-17 16:09:13
+ * @since 2023-10-05 21:29:47
  */
 public interface SubjectJudgeService {
 
@@ -19,6 +19,7 @@ public interface SubjectJudgeService {
      * @return 实例对象
      */
     SubjectJudge queryById(Long id);
+
     /**
      * 新增数据
      *
@@ -43,8 +44,6 @@ public interface SubjectJudgeService {
      */
     boolean deleteById(Long id);
 
-
     List<SubjectJudge> queryByCondition(SubjectJudge subjectJudge);
-
 
 }

@@ -1,5 +1,6 @@
 package com.szk.subject.domain.entity;
 
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.szk.subject.common.entity.PageInfo;
 import lombok.Data;
 
@@ -7,14 +8,14 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * 题目DTO
+ * 题目dto
  *
- * @author makejava
- * @since 2025-02-17 15:57:10
+ * @author: ChickenWing
+ * @date: 2023/10/5
  */
 @Data
 public class SubjectInfoBO extends PageInfo implements Serializable {
-    private static final long serialVersionUID = 802124656573658600L;
+
     /**
      * 主键
      */
@@ -58,6 +59,7 @@ public class SubjectInfoBO extends PageInfo implements Serializable {
      * 标签id
      */
     private List<Integer> labelIds;
+
     /**
      * 标签name
      */
@@ -110,5 +112,6 @@ public class SubjectInfoBO extends PageInfo implements Serializable {
      * 上一题
      */
     private Long lastSubjectId;
+
 }
 

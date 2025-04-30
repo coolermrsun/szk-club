@@ -1,22 +1,28 @@
 package com.szk.subject.infra.basic.service.impl;
 
+import com.baomidou.mybatisplus.core.conditions.query.LambdaQueryWrapper;
+import com.baomidou.mybatisplus.core.toolkit.Wrappers;
 import com.szk.subject.infra.basic.entity.SubjectLiked;
-import com.szk.subject.infra.basic.mapper.SubjectLikedMapper;
+import com.szk.subject.infra.basic.entity.SubjectMapping;
+import com.szk.subject.infra.basic.mapper.SubjectLikedDao;
 import com.szk.subject.infra.basic.service.SubjectLikedService;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import java.util.List;
+import java.util.Objects;
 
 /**
- * 题目点赞表(SubjectLiked)表服务实现类
+ * 题目点赞表 表服务实现类
  *
- * @author makejava
- * @since 2025-02-18 13:39:09
+ * @author szk
+ * @since 2024-01-07 23:08:45
  */
-@Service("subjectLikedService")
+@Service("SubjectLikedService")
 public class SubjectLikedServiceImpl implements SubjectLikedService {
+
     @Resource
-    private SubjectLikedMapper subjectLikedMapper;
+    private SubjectLikedDao subjectLikedDao;
 
     /**
      * 通过ID查询单条数据
@@ -26,7 +32,7 @@ public class SubjectLikedServiceImpl implements SubjectLikedService {
      */
     @Override
     public SubjectLiked queryById(Long id) {
-        return this.subjectLikedMapper.queryById(id);
+        return this.subjectLikedDao.selectById(id);
     }
 
     /**
@@ -36,9 +42,8 @@ public class SubjectLikedServiceImpl implements SubjectLikedService {
      * @return 实例对象
      */
     @Override
-    public SubjectLiked insert(SubjectLiked subjectLiked) {
-        this.subjectLikedMapper.insert(subjectLiked);
-        return subjectLiked;
+    public int insert(SubjectLiked subjectLiked) {
+        return this.subjectLikedDao.insert(subjectLiked);
     }
 
     /**
@@ -48,9 +53,8 @@ public class SubjectLikedServiceImpl implements SubjectLikedService {
      * @return 实例对象
      */
     @Override
-    public SubjectLiked update(SubjectLiked subjectLiked) {
-        this.subjectLikedMapper.update(subjectLiked);
-        return this.queryById(subjectLiked.getId());
+    public int update(SubjectLiked subjectLiked) {
+        return this.subjectLikedDao.updateById(subjectLiked);
     }
 
     /**
@@ -61,6 +65,50 @@ public class SubjectLikedServiceImpl implements SubjectLikedService {
      */
     @Override
     public boolean deleteById(Long id) {
-        return this.subjectLikedMapper.deleteById(id) > 0;
+        return this.subjectLikedDao.deleteById(id) > 0;
     }
+
+    /**
+     * 条件查询
+     *
+     * @param subjectLiked 条件
+     * @return 实例对象
+     */
+    @Override
+    public SubjectLiked queryByCondition(SubjectLiked subjectLiked) {
+
+        LambdaQueryWrapper<SubjectLiked> queryWrapper = Wrappers.<SubjectLiked>lambdaQuery()
+                .eq(Objects.nonNull(subjectLiked.getId()), SubjectLiked::getId, subjectLiked.getId())
+                .eq(Objects.nonNull(subjectLiked.getSubjectId()), SubjectLiked::getSubjectId, subjectLiked.getSubjectId())
+                .eq(Objects.nonNull(subjectLiked.getLikeUserId()), SubjectLiked::getLikeUserId, subjectLiked.getLikeUserId())
+                .eq(Objects.nonNull(subjectLiked.getStatus()), SubjectLiked::getStatus, subjectLiked.getStatus())
+                .eq(Objects.nonNull(subjectLiked.getCreatedBy()), SubjectLiked::getCreatedBy, subjectLiked.getCreatedBy())
+                .eq(Objects.nonNull(subjectLiked.getCreatedTime()), SubjectLiked::getCreatedTime, subjectLiked.getCreatedTime())
+                .eq(Objects.nonNull(subjectLiked.getUpdateBy()), SubjectLiked::getUpdateBy, subjectLiked.getUpdateBy())
+                .eq(Objects.nonNull(subjectLiked.getUpdateTime()), SubjectLiked::getUpdateTime, subjectLiked.getUpdateTime())
+                .eq(Objects.nonNull(subjectLiked.getIsDeleted()), SubjectLiked::getIsDeleted, subjectLiked.getIsDeleted());
+        return subjectLikedDao.selectOne(queryWrapper);
+
+    }
+
+    @Override
+    public void batchInsert(List<SubjectLiked> subjectLikedList) {
+        this.subjectLikedDao.insertBatch(subjectLikedList);
+    }
+
+    @Override
+    public int countByCondition(SubjectLiked subjectLiked) {
+        return this.subjectLikedDao.countByCondition(subjectLiked);
+    }
+
+    @Override
+    public List<SubjectLiked> queryPage(SubjectLiked subjectLiked, int start, Integer pageSize) {
+        return this.subjectLikedDao.queryPage(subjectLiked, start, pageSize);
+    }
+
+    @Override
+    public void batchInsertOrUpdate(List<SubjectLiked> subjectLikedList) {
+        this.subjectLikedDao.batchInsertOrUpdate(subjectLikedList);
+    }
+
 }

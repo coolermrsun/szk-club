@@ -1,7 +1,7 @@
 package com.szk.subject.infra.basic.service.impl;
 
 import com.szk.subject.infra.basic.entity.SubjectJudge;
-import com.szk.subject.infra.basic.mapper.SubjectJudgeMapper;
+import com.szk.subject.infra.basic.mapper.SubjectJudgeDao;
 import com.szk.subject.infra.basic.service.SubjectJudgeService;
 import org.springframework.stereotype.Service;
 
@@ -12,12 +12,12 @@ import java.util.List;
  * 判断题(SubjectJudge)表服务实现类
  *
  * @author makejava
- * @since 2025-02-17 16:09:13
+ * @since 2023-10-05 21:29:47
  */
 @Service("subjectJudgeService")
 public class SubjectJudgeServiceImpl implements SubjectJudgeService {
     @Resource
-    private SubjectJudgeMapper subjectJudgeMapper;
+    private SubjectJudgeDao subjectJudgeDao;
 
     /**
      * 通过ID查询单条数据
@@ -27,7 +27,7 @@ public class SubjectJudgeServiceImpl implements SubjectJudgeService {
      */
     @Override
     public SubjectJudge queryById(Long id) {
-        return this.subjectJudgeMapper.queryById(id);
+        return this.subjectJudgeDao.queryById(id);
     }
 
     /**
@@ -38,7 +38,7 @@ public class SubjectJudgeServiceImpl implements SubjectJudgeService {
      */
     @Override
     public SubjectJudge insert(SubjectJudge subjectJudge) {
-        this.subjectJudgeMapper.insert(subjectJudge);
+        this.subjectJudgeDao.insert(subjectJudge);
         return subjectJudge;
     }
 
@@ -50,7 +50,7 @@ public class SubjectJudgeServiceImpl implements SubjectJudgeService {
      */
     @Override
     public SubjectJudge update(SubjectJudge subjectJudge) {
-        this.subjectJudgeMapper.update(subjectJudge);
+        this.subjectJudgeDao.update(subjectJudge);
         return this.queryById(subjectJudge.getId());
     }
 
@@ -62,11 +62,11 @@ public class SubjectJudgeServiceImpl implements SubjectJudgeService {
      */
     @Override
     public boolean deleteById(Long id) {
-        return this.subjectJudgeMapper.deleteById(id) > 0;
+        return this.subjectJudgeDao.deleteById(id) > 0;
     }
 
     @Override
     public List<SubjectJudge> queryByCondition(SubjectJudge subjectJudge) {
-        return this.subjectJudgeMapper.queryAllByLimit(subjectJudge);
+        return this.subjectJudgeDao.queryAllByLimit(subjectJudge);
     }
 }

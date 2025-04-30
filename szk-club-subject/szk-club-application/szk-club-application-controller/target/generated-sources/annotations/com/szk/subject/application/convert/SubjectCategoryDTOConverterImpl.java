@@ -8,7 +8,7 @@ import javax.annotation.Generated;
 
 @Generated(
     value = "org.mapstruct.ap.MappingProcessor",
-    date = "2025-03-13T15:20:13+0600",
+    date = "2025-04-15T15:06:34+0800",
     comments = "version: 1.4.2.Final, compiler: javac, environment: Java 1.8.0_432 (Amazon.com Inc.)"
 )
 public class SubjectCategoryDTOConverterImpl implements SubjectCategoryDTOConverter {
@@ -36,6 +36,10 @@ public class SubjectCategoryDTOConverterImpl implements SubjectCategoryDTOConver
         SubjectCategoryBO subjectCategoryBO = new SubjectCategoryBO();
 
         subjectCategoryBO.setId( subjectCategoryDTO.getId() );
+        subjectCategoryBO.setCategoryName( subjectCategoryDTO.getCategoryName() );
+        subjectCategoryBO.setCategoryType( subjectCategoryDTO.getCategoryType() );
+        subjectCategoryBO.setImageUrl( subjectCategoryDTO.getImageUrl() );
+        subjectCategoryBO.setParentId( subjectCategoryDTO.getParentId() );
         subjectCategoryBO.setCount( subjectCategoryDTO.getCount() );
 
         return subjectCategoryBO;
@@ -50,6 +54,10 @@ public class SubjectCategoryDTOConverterImpl implements SubjectCategoryDTOConver
         SubjectCategoryDTO subjectCategoryDTO = new SubjectCategoryDTO();
 
         subjectCategoryDTO.setId( subjectCategoryBO.getId() );
+        subjectCategoryDTO.setCategoryName( subjectCategoryBO.getCategoryName() );
+        subjectCategoryDTO.setCategoryType( subjectCategoryBO.getCategoryType() );
+        subjectCategoryDTO.setImageUrl( subjectCategoryBO.getImageUrl() );
+        subjectCategoryDTO.setParentId( subjectCategoryBO.getParentId() );
         subjectCategoryDTO.setCount( subjectCategoryBO.getCount() );
 
         return subjectCategoryDTO;

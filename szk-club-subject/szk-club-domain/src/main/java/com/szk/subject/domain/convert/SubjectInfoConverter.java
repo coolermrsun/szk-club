@@ -1,7 +1,9 @@
 package com.szk.subject.domain.convert;
 
+import com.szk.subject.domain.entity.SubjectCategoryBO;
 import com.szk.subject.domain.entity.SubjectInfoBO;
 import com.szk.subject.domain.entity.SubjectOptionBO;
+import com.szk.subject.infra.basic.entity.SubjectCategory;
 import com.szk.subject.infra.basic.entity.SubjectInfo;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;

@@ -1,6 +1,5 @@
 package com.szk.subject.domain.handler.subject;
 
-
 import com.szk.subject.common.enums.SubjectInfoTypeEnum;
 import com.szk.subject.domain.entity.SubjectInfoBO;
 import com.szk.subject.domain.entity.SubjectOptionBO;

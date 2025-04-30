@@ -8,13 +8,18 @@ import org.springframework.context.annotation.ComponentScan;
 
 /**
  * 刷题微服务启动类
+ *
+ * @author: ChickenWing
+ * @date: 2023/10/1
  */
 @SpringBootApplication
 @ComponentScan("com.szk")
 @MapperScan("com.szk.**.mapper")
 @EnableFeignClients(basePackages = "com.szk")
 public class SubjectApplication {
+
     public static void main(String[] args) {
-        SpringApplication.run(SubjectApplication.class, args);
+        SpringApplication.run(SubjectApplication.class);
     }
+
 }

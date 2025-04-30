@@ -1,7 +1,6 @@
 package com.szk.subject.infra.basic.service;
 
 import com.szk.subject.infra.basic.entity.SubjectLabel;
-import org.apache.ibatis.annotations.Param;
 
 import java.util.List;
 
@@ -9,7 +8,7 @@ import java.util.List;
  * 题目标签表(SubjectLabel)表服务接口
  *
  * @author makejava
- * @since 2025-02-16 20:13:04
+ * @since 2023-10-03 21:50:30
  */
 public interface SubjectLabelService {
 
@@ -20,6 +19,7 @@ public interface SubjectLabelService {
      * @return 实例对象
      */
     SubjectLabel queryById(Long id);
+
     /**
      * 新增数据
      *
@@ -44,7 +44,7 @@ public interface SubjectLabelService {
      */
     boolean deleteById(Long id);
 
-    List<SubjectLabel> batchQueryById(@Param("list") List<Long> labelIdList);
+    List<SubjectLabel> batchQueryById(List<Long> labelIdList);
 
     List<SubjectLabel> queryByCondition(SubjectLabel subjectLabel);
 

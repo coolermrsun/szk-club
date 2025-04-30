@@ -1,6 +1,5 @@
 package com.szk.subject.infra.basic.service;
 
-
 import com.szk.subject.infra.basic.entity.SubjectCategory;
 
 import java.util.List;
@@ -43,6 +42,7 @@ public interface SubjectCategoryService {
      * 查询岗位大类
      */
     List<SubjectCategory> queryCategory(SubjectCategory subjectCategory);
+
 
     Integer querySubjectCount(Long id);
 }

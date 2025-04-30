@@ -1,0 +1,833 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c13a3b7c-8934-41ab-81b9-00c1f706171b" name="更改" comment="">
+      <change afterPath="$PROJECT_DIR$/asyncTool/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/main/java/com/jd/platform/async/callback/DefaultCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/main/java/com/jd/platform/async/callback/DefaultGroupCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/main/java/com/jd/platform/async/callback/ICallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/main/java/com/jd/platform/async/callback/IGroupCallback.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/main/java/com/jd/platform/async/callback/ITimeoutWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/main/java/com/jd/platform/async/callback/IWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/main/java/com/jd/platform/async/exception/SkippedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/main/java/com/jd/platform/async/executor/Async.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/main/java/com/jd/platform/async/executor/timer/SystemClock.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/main/java/com/jd/platform/async/worker/DependWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/main/java/com/jd/platform/async/worker/ResultState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/main/java/com/jd/platform/async/worker/WorkResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/main/java/com/jd/platform/async/wrapper/WorkerWrapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/depend/DeWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/depend/DeWorker1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/depend/DeWorker2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/depend/LambdaTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/depend/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/depend/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/dependnew/DeWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/dependnew/DeWorker1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/dependnew/DeWorker2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/dependnew/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/dependnew/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/parallel/ParTimeoutWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/parallel/ParWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/parallel/ParWorker1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/parallel/ParWorker2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/parallel/ParWorker3.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/parallel/ParWorker4.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/parallel/ParWorker5.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/parallel/ParWorker6.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/parallel/ParWorker7.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/parallel/TestPar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/seq/SeqTimeoutWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/seq/SeqWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/seq/SeqWorker1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/seq/SeqWorker2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/seq/TestSequential.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/asyncTool/src/test/java/seq/TestSequentialTimeout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/jc-club-init.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-api/src/main/java/com/szk/circle/api/common/PageInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-api/src/main/java/com/szk/circle/api/common/PageResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-api/src/main/java/com/szk/circle/api/common/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-api/src/main/java/com/szk/circle/api/common/ResultCodeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-api/src/main/java/com/szk/circle/api/common/TreeNode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-api/src/main/java/com/szk/circle/api/enums/IsDeletedFlagEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-api/src/main/java/com/szk/circle/api/req/GetShareCommentReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-api/src/main/java/com/szk/circle/api/req/GetShareMessageReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-api/src/main/java/com/szk/circle/api/req/GetShareMomentReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-api/src/main/java/com/szk/circle/api/req/RemoveShareCircleReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-api/src/main/java/com/szk/circle/api/req/RemoveShareCommentReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-api/src/main/java/com/szk/circle/api/req/RemoveShareMomentReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-api/src/main/java/com/szk/circle/api/req/SaveMomentCircleReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-api/src/main/java/com/szk/circle/api/req/SaveShareCircleReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-api/src/main/java/com/szk/circle/api/req/SaveShareCommentReplyReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-api/src/main/java/com/szk/circle/api/req/UpdateShareCircleReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-api/src/main/java/com/szk/circle/api/req/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-api/src/main/java/com/szk/circle/api/vo/ShareCircleVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-api/src/main/java/com/szk/circle/api/vo/ShareCommentReplyVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-api/src/main/java/com/szk/circle/api/vo/ShareMessageVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-api/src/main/java/com/szk/circle/api/vo/ShareMomentVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-api/src/main/java/com/szk/circle/api/vo/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/CircleApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/config/GlobalConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/config/SensitiveConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/config/context/LoginContextHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/config/interceptor/FeignConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/config/interceptor/FeignRequestInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/config/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/config/mybatis/MybatisConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/config/mybatis/MybatisPlusAllSqlLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/config/mybatis/SqlStatementInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/config/redis/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/config/redis/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/config/websocket/WebSocketConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/config/websocket/WebSocketServerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/controller/DemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/controller/SensitiveWordsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/controller/ShareCircleController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/controller/ShareCommentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/controller/ShareMessageController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/controller/ShareMomentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/dao/SensitiveWordsMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/dao/ShareCircleMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/dao/ShareCommentReplyMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/dao/ShareMessageMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/dao/ShareMomentMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/dao/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/entity/dto/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/entity/dto/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/entity/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/entity/po/SensitiveWords.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/entity/po/ShareCircle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/entity/po/ShareCommentReply.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/entity/po/ShareMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/entity/po/ShareMoment.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/entity/po/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/rpc/UserRpc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/sensitive/EndType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/sensitive/FlagIndex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/sensitive/WordContext.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/sensitive/WordFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/sensitive/WordType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/service/SensitiveWordsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/service/ShareCircleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/service/ShareCommentReplyService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/service/ShareMessageService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/service/ShareMomentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/service/impl/SensitiveWordsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/service/impl/ShareCircleServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/service/impl/ShareCommentReplyServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/service/impl/ShareMessageServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/service/impl/ShareMomentServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/service/impl/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/service/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/util/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/util/DruidEncryptUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/util/LoginUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/util/TreeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/java/com/szk/circle/server/websocket/ChickenSocket.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/resources/mapper/SensitiveWordsMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/resources/mapper/ShareCircleMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/resources/mapper/ShareCommentReplyMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/resources/mapper/ShareMessageMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/resources/mapper/ShareMomentMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/anno/Table.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/config/GenConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/config/MapperConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/core/CodeGenerationCode.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/core/MysqlDataHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/core/impl/ClassPutContextHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/core/impl/DemoFilePutContextHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/core/impl/JdbcPutContextHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/core/sdk/FilePutContextHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/core/sdk/Function.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/core/sdk/PostCurFiledContextAware.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/core/sdk/PutContextHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/entity/Context.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/entity/JdbcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/entity/Mapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/entity/MapperInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/entity/TableInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/utils/CodeGeneratorUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/utils/ConfigUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/utils/ContextUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/utils/FunctionUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/utils/JdbcUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/utils/Lists.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/utils/MySQLToJavaTypeConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/utils/MySQLToMyBatisTypeConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/utils/PrimitiveTypeUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/utils/SystemUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/utils/TableUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/java/com/szk/core/utils/YamlUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/resources/demo/genCode/fields.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/resources/demo/genCode/gen.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/resources/demo/genCode/mapper.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/resources/demo/genCode/template/EntityTemplate.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/resources/demo/genCode/template/HandlerTemplate.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/resources/demo/genCode/template/PageReqTemplate.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/resources/demo/genCode/template/ReqAndRespTemplate.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/resources/demo/genCode/template/ServiceImplTemplate.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/easy-gen-code-spring-boot-starter/src/main/resources/demo/genCode/template/ServiceTemplate.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-common-starter/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-gen/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-gen/src/main/java/BizPutContextHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-gen/src/main/java/GenCodeMain.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-gen/src/main/resources/szk/authMapper.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-gen/src/main/resources/szk/gen.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-gen/src/main/resources/szk/subjectLikedMapper.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-gen/src/main/resources/szk/subjectMapper.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-gen/src/main/resources/szk/template/DemoBO.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-gen/src/main/resources/szk/template/DemoBOConverter.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-gen/src/main/resources/szk/template/DemoController.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-gen/src/main/resources/szk/template/DemoDTO.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-gen/src/main/resources/szk/template/DemoDTOConverter.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-gen/src/main/resources/szk/template/DemoDao.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-gen/src/main/resources/szk/template/DemoDomainService.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-gen/src/main/resources/szk/template/DemoDomainServiceImpl.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-gen/src/main/resources/szk/template/DemoService.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-gen/src/main/resources/szk/template/DemoServiceImpl.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-gen/src/main/resources/szk/template/DemoTable.java.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-gen/src/main/resources/szk/template/DemoXml.xml.vm" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-api/src/main/java/com/szk/interview/api/common/PageInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-api/src/main/java/com/szk/interview/api/common/PageResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-api/src/main/java/com/szk/interview/api/common/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-api/src/main/java/com/szk/interview/api/common/ResultCodeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-api/src/main/java/com/szk/interview/api/enums/EngineEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-api/src/main/java/com/szk/interview/api/enums/IsDeletedFlagEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-api/src/main/java/com/szk/interview/api/req/InterviewHistoryReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-api/src/main/java/com/szk/interview/api/req/InterviewReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-api/src/main/java/com/szk/interview/api/req/InterviewSubmitReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-api/src/main/java/com/szk/interview/api/req/StartReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-api/src/main/java/com/szk/interview/api/req/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-api/src/main/java/com/szk/interview/api/vo/InterviewHistoryVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-api/src/main/java/com/szk/interview/api/vo/InterviewQuestionHistoryVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-api/src/main/java/com/szk/interview/api/vo/InterviewQuestionVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-api/src/main/java/com/szk/interview/api/vo/InterviewResultVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-api/src/main/java/com/szk/interview/api/vo/InterviewVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-api/src/main/java/com/szk/interview/api/vo/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/InterviewApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/config/GlobalConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/config/context/LoginContextHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/config/interceptor/FeignConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/config/interceptor/FeignRequestInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/config/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/config/mybatis/MybatisConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/config/mybatis/MybatisPlusAllSqlLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/config/mybatis/SqlStatementInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/config/redis/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/config/redis/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/controller/DemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/controller/InterviewController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/dao/InterviewHistoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/dao/InterviewQuestionHistoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/dao/SubjectDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/dao/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/entity/dto/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/entity/dto/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/entity/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/entity/po/InterviewHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/entity/po/InterviewQuestionHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/entity/po/SubjectCategory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/entity/po/SubjectInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/entity/po/SubjectLabel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/entity/po/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/rpc/UserRpc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/service/InterviewEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/service/InterviewHistoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/service/InterviewQuestionHistoryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/service/InterviewService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/service/impl/AlBLInterviewEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/service/impl/InterviewHistoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/service/impl/InterviewQuestionHistoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/service/impl/InterviewServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/service/impl/JiChiInterviewEngine.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/service/impl/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/service/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/util/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/util/DruidEncryptUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/util/EvaluateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/util/HttpUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/util/LoginUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/util/PDFUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/util/keyword/EndType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/util/keyword/FlagIndex.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/util/keyword/KeyWordUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/java/com/szk/interview/server/util/keyword/WordType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/resources/log4j2-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/resources/mapper/InterviewQuestionHistoryDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/resources/mapper/SubjectDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/common/PageInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/common/PageResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/common/Result.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/common/ResultCodeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/enums/AnswerStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/enums/CompleteStatusEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/enums/IsDeletedFlagEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/enums/SetTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/enums/SubjectInfoTypeEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/req/GetPracticeSubjectListReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/req/GetPracticeSubjectReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/req/GetPracticeSubjectsReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/req/GetPreSetReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/req/GetReportReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/req/GetScoreDetailReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/req/GetSubjectDetailReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/req/GetUnCompletePracticeReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/req/SubmitPracticeDetailReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/req/SubmitSubjectDetailReq.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/req/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/vo/PracticeSetVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/vo/PracticeSubjectDetailVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/vo/PracticeSubjectListVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/vo/PracticeSubjectOptionVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/vo/PracticeSubjectVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/vo/RankVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/vo/ReportSkillVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/vo/ReportVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/vo/ScoreDetailVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/vo/SpecialPracticeCategoryVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/vo/SpecialPracticeLabelVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/vo/SpecialPracticeVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/vo/SubjectDetailVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/vo/UnCompletePracticeSetVO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-api/src/main/java/com/szk/practice/api/vo/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/PracticeApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/config/GlobalConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/config/context/LoginContextHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/config/interceptor/FeignConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/config/interceptor/FeignRequestInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/config/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/config/mybatis/MybatisConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/config/mybatis/MybatisPlusAllSqlLog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/config/mybatis/SqlStatementInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/config/redis/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/config/redis/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/controller/DemoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/controller/PracticeDetailController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/controller/PracticeSetController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/dao/PracticeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/dao/PracticeDetailDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/dao/PracticeSetDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/dao/PracticeSetDetailDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/dao/SubjectCategoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/dao/SubjectDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/dao/SubjectJudgeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/dao/SubjectLabelDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/dao/SubjectMappingDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/dao/SubjectMultipleDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/dao/SubjectRadioDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/dao/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/entity/dto/CategoryDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/entity/dto/PracticeSetDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/entity/dto/PracticeSubjectDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/entity/dto/SubjectDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/entity/dto/SubjectDetailDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/entity/dto/SubjectOptionDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/entity/dto/UserInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/entity/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/entity/po/CategoryPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/entity/po/LabelCountPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/entity/po/PracticeDetailPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/entity/po/PracticePO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/entity/po/PracticeRankPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/entity/po/PracticeSetDetailPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/entity/po/PracticeSetPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/entity/po/PrimaryCategoryPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/entity/po/SubjectJudgePO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/entity/po/SubjectLabelPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/entity/po/SubjectMappingPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/entity/po/SubjectMultiplePO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/entity/po/SubjectPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/entity/po/SubjectRadioPO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/rpc/UserRpc.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/service/PracticeDetailService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/service/PracticeSetService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/service/impl/PracticeDetailServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/service/impl/PracticeSetServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/service/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/util/DateUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/util/DruidEncryptUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/java/com/szk/practice/server/util/LoginUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/resources/log4j2-spring.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/resources/mapper/PracticeDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/resources/mapper/PracticeDetailDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/resources/mapper/PracticeSetDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/resources/mapper/PracticeSetDetailDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/resources/mapper/SubjectCategoryDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/resources/mapper/SubjectDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/resources/mapper/SubjectJudgeDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/resources/mapper/SubjectLabelDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/resources/mapper/SubjectMappingDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/resources/mapper/SubjectMultipleDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-practice/szk-club-practice-server/src/main/resources/mapper/SubjectRadioDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/controller/SubjectLikedController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/controller/TestFeignController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/convert/SubjectLikedDTOConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/dto/SubjectLikedDTO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/interceptor/FeignConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/interceptor/FeignRequestInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-job/src/main/java/com/szk/subject/application/job/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-mq/src/main/java/com/szk/subject/application/mq/SubjectLikedConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-mq/src/main/java/com/szk/subject/application/mq/TestConsumer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-mq/src/main/java/com/szk/subject/application/mq/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-common/src/main/java/com/szk/subject/common/config/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-common/src/main/java/com/szk/subject/common/context/LoginContextHolder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-common/src/main/java/com/szk/subject/common/dict/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-common/src/main/java/com/szk/subject/common/util/IdWorkerUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-common/src/main/java/com/szk/subject/common/util/LoginUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-common/src/main/java/com/szk/subject/common/util/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/config/XxlJobConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/convert/SubjectLikedBOConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/entity/SubjectLikedBO.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/entity/SubjectLikedMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/job/SyncLikedJob.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/redis/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/redis/RedisUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/service/SubjectLikedDomainService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/service/impl/SubjectLikedDomainServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/entity/EsSubjectFields.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/entity/SubjectInfoEs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/es/EsClusterConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/es/EsConfigProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/es/EsIndexInfo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/es/EsRestClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/es/EsSearchRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/es/EsSourceData.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/mapper/SubjectLikedDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/SubjectEsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/impl/SubjectEsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/mq/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/rpc/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/resources/mapper/SubjectLikedDao.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-subject-api/src/main/java/com/szk/subject/api/req/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-subject-api/src/main/java/com/szk/subject/api/resp/package-info.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-subject-api/src/main/java/com/szk/subject/api/service/package-info.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/easyCodeTableSettingEncode.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/mybatisx/templates.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-api/target/szk-club-auth-api-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-api/target/szk-club-auth-api-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-application/szk-club-auth-application-controller/src/main/java/com/szk/auth/application/context/LoginContextHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-application/szk-club-auth-application-controller/src/main/java/com/szk/auth/application/context/LoginContextHolder.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-application/szk-club-auth-application-controller/target/classes/com/szk/auth/application/context/LoginContextHolder.class" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-application/szk-club-auth-application-controller/target/classes/com/szk/auth/application/context/LoginContextHolder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-application/szk-club-auth-application-controller/target/generated-sources/annotations/com/szk/auth/application/convert/AuthPermissionDTOConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-application/szk-club-auth-application-controller/target/generated-sources/annotations/com/szk/auth/application/convert/AuthPermissionDTOConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-application/szk-club-auth-application-controller/target/generated-sources/annotations/com/szk/auth/application/convert/AuthRoleDTOConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-application/szk-club-auth-application-controller/target/generated-sources/annotations/com/szk/auth/application/convert/AuthRoleDTOConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-application/szk-club-auth-application-controller/target/generated-sources/annotations/com/szk/auth/application/convert/AuthRolePermissionDTOConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-application/szk-club-auth-application-controller/target/generated-sources/annotations/com/szk/auth/application/convert/AuthRolePermissionDTOConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-application/szk-club-auth-application-controller/target/generated-sources/annotations/com/szk/auth/application/convert/AuthUserDTOConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-application/szk-club-auth-application-controller/target/generated-sources/annotations/com/szk/auth/application/convert/AuthUserDTOConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-application/szk-club-auth-application-controller/target/szk-club-auth-application-controller-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-application/szk-club-auth-application-controller/target/szk-club-auth-application-controller-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-application/szk-club-auth-application-job/target/szk-club-auth-application-job-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-application/szk-club-auth-application-job/target/szk-club-auth-application-job-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-application/szk-club-auth-application-mq/target/szk-club-auth-application-mq-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-application/szk-club-auth-application-mq/target/szk-club-auth-application-mq-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-application/target/szk-club-auth-application-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-application/target/szk-club-auth-application-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-common/target/szk-club-auth-common-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-common/target/szk-club-auth-common-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-domain/src/main/java/com/szk/auth/domain/service/impl/AuthUserDomainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-domain/src/main/java/com/szk/auth/domain/service/impl/AuthUserDomainServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-domain/target/generated-sources/annotations/com/szk/auth/domain/convert/AuthPermissionBOConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-domain/target/generated-sources/annotations/com/szk/auth/domain/convert/AuthPermissionBOConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-domain/target/generated-sources/annotations/com/szk/auth/domain/convert/AuthRoleBOConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-domain/target/generated-sources/annotations/com/szk/auth/domain/convert/AuthRoleBOConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-domain/target/generated-sources/annotations/com/szk/auth/domain/convert/AuthUserBOConverterImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-domain/target/generated-sources/annotations/com/szk/auth/domain/convert/AuthUserBOConverterImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-domain/target/szk-club-auth-domain-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-domain/target/szk-club-auth-domain-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-infra/src/main/resources/mapper/AuthPermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-infra/src/main/resources/mapper/AuthPermissionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-infra/target/classes/mapper/AuthPermissionMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-infra/target/classes/mapper/AuthPermissionMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-infra/target/classes/mapper/AuthUserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-infra/target/classes/mapper/AuthUserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-infra/target/szk-club-auth-infra-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-infra/target/szk-club-auth-infra-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-starter/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-starter/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-starter/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-starter/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-starter/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-starter/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-starter/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-starter/target/classes/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-starter/target/szk-club-auth-starter.jar" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-starter/target/szk-club-auth-starter.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-starter/target/szk-club-auth-starter.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-auth/szk-club-auth-starter/target/szk-club-auth-starter.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-gateway/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-gateway/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-gateway/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-gateway/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-gateway/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-gateway/target/classes/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-gateway/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-gateway/target/szk-club-gateway.jar" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-gateway/target/szk-club-gateway.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-gateway/target/szk-club-gateway.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-gateway/target/szk-club-gateway.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-oss/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-oss/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-oss/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-oss/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-oss/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-oss/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-oss/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-oss/target/classes/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-oss/target/szk-club-oss.jar" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-oss/target/szk-club-oss.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-oss/target/szk-club-oss.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-oss/target/szk-club-oss.jar.original" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/config/GlobalConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/config/GlobalConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/controller/SubjectCategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/controller/SubjectCategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/controller/SubjectController.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/controller/SubjectController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/controller/SubjectLabelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/controller/SubjectLabelController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/convert/SubjectAnswerDTOConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/convert/SubjectAnswerDTOConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/convert/SubjectCategoryDTOConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/convert/SubjectCategoryDTOConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/convert/SubjectInfoDTOConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/convert/SubjectInfoDTOConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/convert/SubjectLabelDTOConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/convert/SubjectLabelDTOConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/dto/SubjectAnswerDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/dto/SubjectAnswerDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/dto/SubjectCategoryDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/dto/SubjectCategoryDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/dto/SubjectInfoDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/dto/SubjectInfoDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/dto/SubjectLabelDTO.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/src/main/java/com/szk/subject/application/dto/SubjectLabelDTO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/target/classes/com/szk/subject/application/config/GlobalConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/target/classes/com/szk/subject/application/controller/SubjectCategoryController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/target/classes/com/szk/subject/application/controller/SubjectController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/target/classes/com/szk/subject/application/controller/SubjectLabelController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/target/classes/com/szk/subject/application/convert/SubjectAnswerDTOConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/target/classes/com/szk/subject/application/convert/SubjectAnswerDTOConverterImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/target/classes/com/szk/subject/application/convert/SubjectCategoryDTOConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/target/classes/com/szk/subject/application/convert/SubjectCategoryDTOConverterImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/target/classes/com/szk/subject/application/convert/SubjectInfoDTOConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/target/classes/com/szk/subject/application/convert/SubjectInfoDTOConverterImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/target/classes/com/szk/subject/application/convert/SubjectLabelDTOConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/target/classes/com/szk/subject/application/convert/SubjectLabelDTOConverterImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/target/classes/com/szk/subject/application/dto/SubjectAnswerDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/target/classes/com/szk/subject/application/dto/SubjectCategoryDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/target/classes/com/szk/subject/application/dto/SubjectInfoDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/target/classes/com/szk/subject/application/dto/SubjectLabelDTO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/target/generated-sources/annotations/com/szk/subject/application/convert/SubjectAnswerDTOConverterImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/target/generated-sources/annotations/com/szk/subject/application/convert/SubjectCategoryDTOConverterImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/target/generated-sources/annotations/com/szk/subject/application/convert/SubjectInfoDTOConverterImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/target/generated-sources/annotations/com/szk/subject/application/convert/SubjectLabelDTOConverterImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-controller/target/szk-club-application-controller-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-job/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-job/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-job/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-job/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-job/target/szk-club-application-job-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-mq/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-mq/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-mq/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-mq/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-application/szk-club-application-mq/target/szk-club-application-mq-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-common/src/main/java/com/szk/subject/common/entity/PageInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-common/src/main/java/com/szk/subject/common/entity/PageInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-common/src/main/java/com/szk/subject/common/entity/PageResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-common/src/main/java/com/szk/subject/common/entity/PageResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-common/src/main/java/com/szk/subject/common/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-common/src/main/java/com/szk/subject/common/entity/Result.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-common/src/main/java/com/szk/subject/common/enums/CategoryTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-common/src/main/java/com/szk/subject/common/enums/CategoryTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-common/src/main/java/com/szk/subject/common/enums/IsDeletedFlagEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-common/src/main/java/com/szk/subject/common/enums/IsDeletedFlagEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-common/src/main/java/com/szk/subject/common/enums/ResultCodeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-common/src/main/java/com/szk/subject/common/enums/ResultCodeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-common/src/main/java/com/szk/subject/common/enums/SubjectInfoTypeEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-common/src/main/java/com/szk/subject/common/enums/SubjectInfoTypeEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-common/src/main/java/com/szk/subject/common/enums/SubjectLikedStatusEnum.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-common/src/main/java/com/szk/subject/common/enums/SubjectLikedStatusEnum.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-common/target/classes/com/szk/subject/common/entity/PageInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-common/target/classes/com/szk/subject/common/entity/PageResult.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-common/target/classes/com/szk/subject/common/entity/Result.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-common/target/classes/com/szk/subject/common/enums/CategoryTypeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-common/target/classes/com/szk/subject/common/enums/IsDeletedFlagEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-common/target/classes/com/szk/subject/common/enums/ResultCodeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-common/target/classes/com/szk/subject/common/enums/SubjectInfoTypeEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-common/target/classes/com/szk/subject/common/enums/SubjectLikedStatusEnum.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-common/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-common/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-common/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-common/target/szk-club-common-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/config/CustomNameThreadFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/config/CustomNameThreadFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/config/ThreadPoolConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/config/ThreadPoolConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/convert/BriefSubjectConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/convert/BriefSubjectConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/convert/JudgeSubjectConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/convert/JudgeSubjectConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/convert/MultipleSubjectConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/convert/MultipleSubjectConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/convert/RadioSubjectConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/convert/RadioSubjectConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/convert/SubjectCategoryConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/convert/SubjectCategoryConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/convert/SubjectInfoConverter.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/convert/SubjectInfoConverter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/entity/SubjectAnswerBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/entity/SubjectAnswerBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/entity/SubjectCategoryBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/entity/SubjectCategoryBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/entity/SubjectInfoBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/entity/SubjectInfoBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/entity/SubjectLabelBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/entity/SubjectLabelBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/entity/SubjectOptionBO.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/entity/SubjectOptionBO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/handler/subject/BriefTypeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/handler/subject/BriefTypeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/handler/subject/JudgeTypeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/handler/subject/JudgeTypeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/handler/subject/MultipleTypeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/handler/subject/MultipleTypeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/handler/subject/RadioTypeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/handler/subject/RadioTypeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/handler/subject/SubjectTypeHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/handler/subject/SubjectTypeHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/handler/subject/SubjectTypeHandlerFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/handler/subject/SubjectTypeHandlerFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/service/SubjectCategoryDomainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/service/SubjectCategoryDomainService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/service/SubjectInfoDomainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/service/SubjectInfoDomainService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/service/SubjectLabelDomainService.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/service/SubjectLabelDomainService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/service/impl/SubjectCategoryDomainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/service/impl/SubjectCategoryDomainServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/service/impl/SubjectInfoDomainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/service/impl/SubjectInfoDomainServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/service/impl/SubjectLabelDomainServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/service/impl/SubjectLabelDomainServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/util/CacheUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/src/main/java/com/szk/subject/domain/util/CacheUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/config/CustomNameThreadFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/config/ThreadPoolConfig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/convert/BriefSubjectConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/convert/BriefSubjectConverterImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/convert/JudgeSubjectConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/convert/JudgeSubjectConverterImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/convert/MultipleSubjectConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/convert/MultipleSubjectConverterImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/convert/RadioSubjectConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/convert/RadioSubjectConverterImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/convert/SubjectCategoryConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/convert/SubjectCategoryConverterImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/convert/SubjectInfoConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/convert/SubjectInfoConverterImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/convert/SubjectLabelConverter.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/convert/SubjectLabelConverterImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/entity/SubjectAnswerBO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/entity/SubjectCategoryBO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/entity/SubjectInfoBO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/entity/SubjectLabelBO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/entity/SubjectOptionBO.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/handler/subject/BriefTypeHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/handler/subject/JudgeTypeHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/handler/subject/MultipleTypeHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/handler/subject/RadioTypeHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/handler/subject/SubjectTypeHandler.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/handler/subject/SubjectTypeHandlerFactory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/service/SubjectCategoryDomainService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/service/SubjectInfoDomainService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/service/SubjectLabelDomainService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/service/impl/SubjectCategoryDomainServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/service/impl/SubjectInfoDomainServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/service/impl/SubjectLabelDomainServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/classes/com/szk/subject/domain/util/CacheUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/generated-sources/annotations/com/szk/subject/domain/convert/BriefSubjectConverterImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/generated-sources/annotations/com/szk/subject/domain/convert/JudgeSubjectConverterImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/generated-sources/annotations/com/szk/subject/domain/convert/MultipleSubjectConverterImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/generated-sources/annotations/com/szk/subject/domain/convert/RadioSubjectConverterImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/generated-sources/annotations/com/szk/subject/domain/convert/SubjectCategoryConverterImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/generated-sources/annotations/com/szk/subject/domain/convert/SubjectInfoConverterImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/generated-sources/annotations/com/szk/subject/domain/convert/SubjectLabelConverterImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-domain/target/szk-club-domain-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/entity/SubjectBrief.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/entity/SubjectBrief.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/entity/SubjectCategory.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/entity/SubjectCategory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/entity/SubjectInfo.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/entity/SubjectInfo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/entity/SubjectJudge.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/entity/SubjectJudge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/entity/SubjectLabel.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/entity/SubjectLabel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/entity/SubjectLiked.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/entity/SubjectLiked.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/entity/SubjectMapping.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/entity/SubjectMapping.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/entity/SubjectMultiple.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/entity/SubjectMultiple.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/entity/SubjectRadio.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/entity/SubjectRadio.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/mapper/SubjectBriefMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/mapper/SubjectBriefDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/mapper/SubjectCategoryMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/mapper/SubjectCategoryDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/mapper/SubjectInfoMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/mapper/SubjectInfoDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/mapper/SubjectJudgeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/mapper/SubjectJudgeDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/mapper/SubjectLabelMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/mapper/SubjectLabelDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/mapper/SubjectLikedMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/mapper/SubjectMappingMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/mapper/SubjectMappingDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/mapper/SubjectMultipleMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/mapper/SubjectMultipleDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/mapper/SubjectRadioMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/mapper/SubjectRadioDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/SubjectBriefService.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/SubjectBriefService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/SubjectCategoryService.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/SubjectCategoryService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/SubjectInfoService.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/SubjectInfoService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/SubjectJudgeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/SubjectJudgeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/SubjectLabelService.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/SubjectLabelService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/SubjectLikedService.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/SubjectLikedService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/SubjectMappingService.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/SubjectMappingService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/SubjectMultipleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/SubjectMultipleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/SubjectRadioService.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/SubjectRadioService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/impl/SubjectBriefServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/impl/SubjectBriefServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/impl/SubjectCategoryServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/impl/SubjectCategoryServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/impl/SubjectInfoServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/impl/SubjectInfoServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/impl/SubjectJudgeServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/impl/SubjectJudgeServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/impl/SubjectLabelServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/impl/SubjectLabelServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/impl/SubjectLikedServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/impl/SubjectLikedServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/impl/SubjectMappingServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/impl/SubjectMappingServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/impl/SubjectMultipleServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/impl/SubjectMultipleServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/impl/SubjectRadioServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/service/impl/SubjectRadioServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/utils/DruidEncryptUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/basic/utils/DruidEncryptUtil.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/config/MybatisInterceptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/java/com/szk/subject/infra/config/MybatisInterceptor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/resources/mapper/SubjectBriefMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/resources/mapper/SubjectCategoryMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/resources/mapper/SubjectInfoMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/resources/mapper/SubjectJudgeMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/resources/mapper/SubjectLabelMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/resources/mapper/SubjectLabelDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/resources/mapper/SubjectLikedMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/resources/mapper/SubjectMappingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/resources/mapper/SubjectMappingDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/resources/mapper/SubjectMultipleMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/resources/mapper/SubjectRadioMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/resources/mapper/SubjectRadioDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/entity/SubjectBrief.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/entity/SubjectCategory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/entity/SubjectInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/entity/SubjectJudge.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/entity/SubjectLabel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/entity/SubjectLiked.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/entity/SubjectMapping.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/entity/SubjectMultiple.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/entity/SubjectRadio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/mapper/SubjectBriefMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/mapper/SubjectCategoryMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/mapper/SubjectInfoMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/mapper/SubjectJudgeMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/mapper/SubjectLabelMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/mapper/SubjectLikedMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/mapper/SubjectMappingMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/mapper/SubjectMultipleMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/mapper/SubjectRadioMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/service/SubjectBriefService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/service/SubjectCategoryService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/service/SubjectInfoService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/service/SubjectJudgeService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/service/SubjectLabelService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/service/SubjectLikedService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/service/SubjectMappingService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/service/SubjectMultipleService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/service/SubjectRadioService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/service/impl/SubjectBriefServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/service/impl/SubjectCategoryServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/service/impl/SubjectInfoServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/service/impl/SubjectJudgeServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/service/impl/SubjectLabelServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/service/impl/SubjectLikedServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/service/impl/SubjectMappingServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/service/impl/SubjectMultipleServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/service/impl/SubjectRadioServiceImpl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/basic/utils/DruidEncryptUtil.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/config/MybatisConfiguration.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/config/MybatisInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/config/MybatisPlusAllSqlLog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/com/szk/subject/infra/config/SqlStatementInterceptor.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/mapper/SubjectBriefMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/resources/mapper/SubjectBriefDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/mapper/SubjectCategoryMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/resources/mapper/SubjectCategoryDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/mapper/SubjectInfoMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/resources/mapper/SubjectInfoDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/mapper/SubjectJudgeMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/resources/mapper/SubjectJudgeDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/mapper/SubjectLabelMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/mapper/SubjectLikedMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/mapper/SubjectMappingMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-interview/szk-club-interview-server/src/main/resources/mapper/InterviewHistoryDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/mapper/SubjectMultipleMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/src/main/resources/mapper/SubjectMultipleDao.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/classes/mapper/SubjectRadioMapper.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-infra/target/szk-club-infra-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-starter/log/error.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-starter/log/info.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-starter/log/temp.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-starter/log/warn.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-starter/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-starter/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-starter/src/main/java/com/szk/subject/SubjectApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-starter/src/main/java/com/szk/subject/SubjectApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-starter/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-starter/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-starter/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-starter/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-starter/src/main/resources/log4j2-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-starter/src/main/resources/log4j2-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-starter/target/classes/application.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-starter/target/classes/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-starter/target/classes/com/szk/subject/SubjectApplication.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-starter/target/classes/log4j2-spring.xml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-circle/szk-club-circle-server/src/main/resources/log4j2-spring.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-starter/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-starter/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-starter/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-starter/target/szk-club-starter.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-starter/target/szk-club-starter.jar.original" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-subject-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-subject/szk-club-subject-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-subject-api/target/maven-archiver/pom.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-subject-api/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-subject/szk-club-subject-api/target/szk-club-subject-api-1.0-SNAPSHOT.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-wx/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-wx/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-wx/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-wx/target/classes/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-wx/target/szk-club-wx.jar" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-wx/target/szk-club-wx.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/szk-club-wx/target/szk-club-wx.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/szk-club-wx/target/szk-club-wx.jar.original" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "coolermrsun"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/coolermrsun/szk-club.git",
+    "accountId": "f57f42ad-873e-4cf8-8a73-47ec92f7fd0a"
+  }
+}]]></component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
+  <component name="ProjectId" id="2vgAtaa9XYZDPDXJW1QkbiaxfIF" />
+  <component name="ProjectViewState">
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Maven.szk-club-gen [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Maven.szk-club-gen [install].executor&quot;: &quot;Run&quot;,
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;Spring Boot.InterviewApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.OssApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.PracticeApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;Spring Boot.SubjectApplication.executor&quot;: &quot;Debug&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="ReactorSettings">
+    <option name="notificationShown" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration name="SubjectApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="szk-club-starter" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.szk.subject.SubjectApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.23726.103" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.23726.103" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="应用程序级" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="默认任务">
+      <changelist id="c13a3b7c-8934-41ab-81b9-00c1f706171b" name="更改" comment="" />
+      <created>1744556558601</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1744556558601</updated>
+      <workItem from="1744556559788" duration="2017000" />
+      <workItem from="1744697637670" duration="7481000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

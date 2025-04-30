@@ -3,6 +3,7 @@ package com.szk.subject.domain.util;
 import com.alibaba.fastjson.JSON;
 import com.google.common.cache.Cache;
 import com.google.common.cache.CacheBuilder;
+import com.szk.subject.domain.entity.SubjectCategoryBO;
 import org.apache.commons.lang3.StringUtils;
 import org.springframework.stereotype.Component;
 import org.springframework.util.CollectionUtils;
@@ -17,8 +18,8 @@ import java.util.function.Function;
 /**
  * 缓存工具类
  *
- * @author: szk
-2023/12/3
+ * @author: ChickenWing
+ * @date: 2023/12/3
  */
 @Component
 public class CacheUtil<K, V> {

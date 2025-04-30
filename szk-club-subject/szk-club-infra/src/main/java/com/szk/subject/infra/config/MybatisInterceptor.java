@@ -1,6 +1,8 @@
 package com.szk.subject.infra.config;
 
+import com.szk.subject.common.util.LoginUtil;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.lang3.StringUtils;
 import org.apache.ibatis.executor.Executor;
 import org.apache.ibatis.mapping.MappedStatement;
 import org.apache.ibatis.mapping.SqlCommandType;
@@ -13,8 +15,8 @@ import java.util.*;
 /**
  * 填充createBy,createTime等公共字段的拦截器
  *
- * @author: szk
-/1/5
+ * @author: ChickenWing
+ * @date: 2024/1/5
  */
 @Component
 @Slf4j
@@ -31,14 +33,14 @@ public class MybatisInterceptor implements Interceptor {
         if (parameter == null) {
             return invocation.proceed();
         }
-//        //获取当前登录用户的id
-//        String loginId = LoginUtil.getLoginId();
-//        if (StringUtils.isBlank(loginId)) {
-//            return invocation.proceed();
-//        }
-//        if (SqlCommandType.INSERT == sqlCommandType || SqlCommandType.UPDATE == sqlCommandType) {
-//            replaceEntityProperty(parameter, loginId, sqlCommandType);
-//        }
+        //获取当前登录用户的id
+        String loginId = LoginUtil.getLoginId();
+        if (StringUtils.isBlank(loginId)) {
+            return invocation.proceed();
+        }
+        if (SqlCommandType.INSERT == sqlCommandType || SqlCommandType.UPDATE == sqlCommandType) {
+            replaceEntityProperty(parameter, loginId, sqlCommandType);
+        }
         return invocation.proceed();
     }
 

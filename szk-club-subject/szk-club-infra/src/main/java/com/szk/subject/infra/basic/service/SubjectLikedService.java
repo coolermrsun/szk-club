@@ -1,11 +1,14 @@
 package com.szk.subject.infra.basic.service;
 
 import com.szk.subject.infra.basic.entity.SubjectLiked;
+
+import java.util.List;
+
 /**
- * 题目点赞表(SubjectLiked)表服务接口
+ * 题目点赞表 表服务接口
  *
- * @author makejava
- * @since 2025-02-18 13:39:09
+ * @author szk
+ * @since 2024-01-07 23:08:45
  */
 public interface SubjectLikedService {
 
@@ -23,7 +26,7 @@ public interface SubjectLikedService {
      * @param subjectLiked 实例对象
      * @return 实例对象
      */
-    SubjectLiked insert(SubjectLiked subjectLiked);
+    int insert(SubjectLiked subjectLiked);
 
     /**
      * 修改数据
@@ -31,7 +34,7 @@ public interface SubjectLikedService {
      * @param subjectLiked 实例对象
      * @return 实例对象
      */
-    SubjectLiked update(SubjectLiked subjectLiked);
+    int update(SubjectLiked subjectLiked);
 
     /**
      * 通过主键删除数据
@@ -40,5 +43,18 @@ public interface SubjectLikedService {
      * @return 是否成功
      */
     boolean deleteById(Long id);
+
+    /**
+     * 根据条件查询角色
+     */
+    SubjectLiked queryByCondition(SubjectLiked subjectLiked);
+
+    void batchInsert(List<SubjectLiked> subjectLikedList);
+
+    int countByCondition(SubjectLiked subjectLiked);
+
+    List<SubjectLiked> queryPage(SubjectLiked subjectLiked, int start, Integer pageSize);
+
+    void batchInsertOrUpdate(List<SubjectLiked> subjectLikedList);
 
 }

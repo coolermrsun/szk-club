@@ -10,8 +10,8 @@ import java.util.List;
 /**
  * 题目答案dto转换器
  * 
- * @author: szk
-2023/10/8
+ * @author: ChickenWing
+ * @date: 2023/10/8
  */
 @Mapper
 public interface SubjectAnswerDTOConverter {

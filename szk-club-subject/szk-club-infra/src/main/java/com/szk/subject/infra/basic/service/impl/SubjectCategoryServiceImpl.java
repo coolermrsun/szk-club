@@ -2,7 +2,7 @@ package com.szk.subject.infra.basic.service.impl;
 
 import com.alibaba.fastjson.JSON;
 import com.szk.subject.infra.basic.entity.SubjectCategory;
-import com.szk.subject.infra.basic.mapper.SubjectCategoryMapper;
+import com.szk.subject.infra.basic.mapper.SubjectCategoryDao;
 import com.szk.subject.infra.basic.service.SubjectCategoryService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
@@ -21,7 +21,8 @@ import java.util.List;
 public class SubjectCategoryServiceImpl implements SubjectCategoryService {
 
     @Resource
-    private SubjectCategoryMapper subjectCategoryMapper;
+    private SubjectCategoryDao subjectCategoryDao;
+
 
     /**
      * 新增数据
@@ -35,13 +36,13 @@ public class SubjectCategoryServiceImpl implements SubjectCategoryService {
             log.info("SubjectCategoryController.add.subjectCategory:{}"
                     , JSON.toJSONString(subjectCategory));
         }
-        this.subjectCategoryMapper.insert(subjectCategory);
+        this.subjectCategoryDao.insert(subjectCategory);
         return subjectCategory;
     }
 
     @Override
     public SubjectCategory queryById(Long id) {
-        return this.subjectCategoryMapper.queryById(id);
+        return this.subjectCategoryDao.queryById(id);
     }
 
     /**
@@ -52,7 +53,7 @@ public class SubjectCategoryServiceImpl implements SubjectCategoryService {
      */
     @Override
     public int update(SubjectCategory subjectCategory) {
-        return this.subjectCategoryMapper.update(subjectCategory);
+        return this.subjectCategoryDao.update(subjectCategory);
     }
 
     /**
@@ -63,17 +64,16 @@ public class SubjectCategoryServiceImpl implements SubjectCategoryService {
      */
     @Override
     public boolean deleteById(Long id) {
-        return this.subjectCategoryMapper.deleteById(id) > 0;
+        return this.subjectCategoryDao.deleteById(id) > 0;
     }
 
     @Override
     public List<SubjectCategory> queryCategory(SubjectCategory subjectCategory) {
-        return this.subjectCategoryMapper.queryCategory(subjectCategory);
+        return this.subjectCategoryDao.queryCategory(subjectCategory);
     }
 
     @Override
     public Integer querySubjectCount(Long id) {
-        return this.subjectCategoryMapper.querySubjectCount(id);
+        return this.subjectCategoryDao.querySubjectCount(id);
     }
-
 }

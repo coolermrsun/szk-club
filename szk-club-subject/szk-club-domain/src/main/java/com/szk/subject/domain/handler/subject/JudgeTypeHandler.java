@@ -3,22 +3,24 @@ package com.szk.subject.domain.handler.subject;
 import com.szk.subject.common.enums.IsDeletedFlagEnum;
 import com.szk.subject.common.enums.SubjectInfoTypeEnum;
 import com.szk.subject.domain.convert.JudgeSubjectConverter;
+import com.szk.subject.domain.convert.MultipleSubjectConverter;
 import com.szk.subject.domain.entity.SubjectAnswerBO;
 import com.szk.subject.domain.entity.SubjectInfoBO;
 import com.szk.subject.domain.entity.SubjectOptionBO;
 import com.szk.subject.infra.basic.entity.SubjectJudge;
+import com.szk.subject.infra.basic.entity.SubjectMultiple;
 import com.szk.subject.infra.basic.service.SubjectJudgeService;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
-
+import java.util.LinkedList;
 import java.util.List;
 
 /**
  * 判断题目的策略类
  * 
- * @author: szk
-
+ * @author: ChickenWing
+ * @date: 2023/10/5
  */
 @Component
 public class JudgeTypeHandler implements SubjectTypeHandler{
@@ -33,35 +35,14 @@ public class JudgeTypeHandler implements SubjectTypeHandler{
 
     @Override
     public void add(SubjectInfoBO subjectInfoBO) {
-        // 判断 subjectInfoBO 是否为 null
-        if (subjectInfoBO == null) {
-            throw new IllegalArgumentException("SubjectInfoBO cannot be null");
-        }
-        // 获取选项列表并判断是否为空
-        List<SubjectAnswerBO> optionList = subjectInfoBO.getOptionList();
-        if (optionList == null || optionList.isEmpty()) {
-            throw new IllegalArgumentException("Option list cannot be null or empty");
-        }
-        // 获取第一个选项并判断其是否为 null
-        SubjectAnswerBO subjectAnswerBO = optionList.get(0);
-        if (subjectAnswerBO == null) {
-            throw new IllegalArgumentException("SubjectAnswerBO cannot be null");
-        }
-        // 创建 SubjectJudge 实体并设置相关字段
+        //判断题目的插入
         SubjectJudge subjectJudge = new SubjectJudge();
+        SubjectAnswerBO subjectAnswerBO = subjectInfoBO.getOptionList().get(0);
         subjectJudge.setSubjectId(subjectInfoBO.getId());
-        // 判断 IsCorrect 是否有效
-        Integer isCorrect = subjectAnswerBO.getIsCorrect();
-        if (isCorrect == null) {
-            throw new IllegalArgumentException("IsCorrect cannot be null");
-        }
-        subjectJudge.setIsCorrect(isCorrect);
-        // 设置删除标志位
+        subjectJudge.setIsCorrect(subjectAnswerBO.getIsCorrect());
         subjectJudge.setIsDeleted(IsDeletedFlagEnum.UN_DELETED.getCode());
-        // 调用 insert 方法插入数据
         subjectJudgeService.insert(subjectJudge);
     }
-
 
     @Override
     public SubjectOptionBO query(int subjectId) {

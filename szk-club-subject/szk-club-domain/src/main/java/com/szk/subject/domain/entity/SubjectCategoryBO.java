@@ -1,39 +1,45 @@
 package com.szk.subject.domain.entity;
 
 import lombok.Data;
+
 import java.io.Serializable;
+import java.util.Date;
 import java.util.List;
 
 /**
  * 题目分类(SubjectCategory)实体类
  *
  * @author makejava
- * @since 2025-02-12 14:26:50
+ * @since 2023-10-01 21:49:59
  */
 @Data
 public class SubjectCategoryBO implements Serializable {
-    private static final long serialVersionUID = 281213603287698155L;
+
+    /**
+     * 主键
+     */
     private Long id;
 
     /**
      * 分类名称
      */
-    private String category_name;
+    private String categoryName;
 
     /**
      * 分类类型
      */
-    private Integer category_type;
+    private Integer categoryType;
 
     /**
      * 图标连接
      */
-    private String image_url;
+    private String imageUrl;
 
     /**
      * 父级id
      */
-    private Long parent_id;
+    private Long parentId;
+
     /**
      * 数量
      */
@@ -43,6 +49,6 @@ public class SubjectCategoryBO implements Serializable {
      * 标签bo数量
      */
     private List<SubjectLabelBO> labelBOList;
-}
 
+}
 

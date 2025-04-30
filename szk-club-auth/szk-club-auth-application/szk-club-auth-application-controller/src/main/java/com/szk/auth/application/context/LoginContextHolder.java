@@ -1,5 +1,6 @@
 package com.szk.auth.application.context;
 
+import java.util.List;
 import java.util.Map;
 import java.util.Objects;
 import java.util.concurrent.ConcurrentHashMap;
@@ -24,7 +25,6 @@ public class LoginContextHolder {
         Map<String, Object> threadLocalMap = getThreadLocalMap();
         return threadLocalMap.get(key);
     }
-
     public static String getLoginId(){
         return (String) getThreadLocalMap().get("loginId");
     }

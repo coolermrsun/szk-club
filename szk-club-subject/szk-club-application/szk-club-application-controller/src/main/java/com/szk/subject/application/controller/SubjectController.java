@@ -7,26 +7,40 @@ import com.szk.subject.application.convert.SubjectInfoDTOConverter;
 import com.szk.subject.application.dto.SubjectInfoDTO;
 import com.szk.subject.common.entity.PageResult;
 import com.szk.subject.common.entity.Result;
+import com.szk.subject.domain.convert.SubjectInfoConverter;
 import com.szk.subject.domain.entity.SubjectAnswerBO;
 import com.szk.subject.domain.entity.SubjectInfoBO;
 import com.szk.subject.domain.service.SubjectInfoDomainService;
+import com.szk.subject.infra.basic.entity.SubjectInfoEs;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.StringUtils;
+import org.apache.ibatis.annotations.Param;
+import org.apache.rocketmq.spring.core.RocketMQTemplate;
 import org.springframework.util.CollectionUtils;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.Resource;
 import java.util.List;
 
 /**
- * 刷题Controller
+ * 刷题controller
+ *
+ * @author: ChickenWing
+ * @date: 2023/10/1
  */
 @RestController
 @Slf4j
 @RequestMapping("/subject")
 public class SubjectController {
+
     @Resource
     private SubjectInfoDomainService subjectInfoDomainService;
+
+    @Resource
+    private RocketMQTemplate rocketMQTemplate;
 
     /**
      * 新增题目
@@ -80,6 +94,7 @@ public class SubjectController {
             return Result.fail("分页查询题目失败");
         }
     }
+
     /**
      * 查询题目信息
      */
@@ -99,4 +114,51 @@ public class SubjectController {
             return Result.fail("查询题目详情失败");
         }
     }
+
+    /**
+     * 全文检索
+     */
+    @PostMapping("/getSubjectPageBySearch")
+    public Result<PageResult<SubjectInfoEs>> getSubjectPageBySearch(@RequestBody SubjectInfoDTO subjectInfoDTO) {
+        try {
+            if (log.isInfoEnabled()) {
+                log.info("SubjectController.getSubjectPageBySearch.dto:{}", JSON.toJSONString(subjectInfoDTO));
+            }
+            Preconditions.checkArgument(StringUtils.isNotBlank(subjectInfoDTO.getKeyWord()), "关键词不能为空");
+            SubjectInfoBO subjectInfoBO = SubjectInfoDTOConverter.INSTANCE.convertDTOToBO(subjectInfoDTO);
+            subjectInfoBO.setPageNo(subjectInfoDTO.getPageNo());
+            subjectInfoBO.setPageSize(subjectInfoDTO.getPageSize());
+            PageResult<SubjectInfoEs> boPageResult = subjectInfoDomainService.getSubjectPageBySearch(subjectInfoBO);
+            return Result.ok(boPageResult);
+        } catch (Exception e) {
+            log.error("SubjectCategoryController.getSubjectPageBySearch.error:{}", e.getMessage(), e);
+            return Result.fail("全文检索失败");
+        }
+    }
+
+    /**
+     * 获取题目贡献榜
+     */
+    @PostMapping("/getContributeList")
+    public Result<List<SubjectInfoDTO>> getContributeList() {
+        try {
+            List<SubjectInfoBO> boList = subjectInfoDomainService.getContributeList();
+            List<SubjectInfoDTO> dtoList = SubjectInfoDTOConverter.INSTANCE.convertBOToDTOList(boList);
+            return Result.ok(dtoList);
+        } catch (Exception e) {
+            log.error("SubjectCategoryController.getContributeList.error:{}", e.getMessage(), e);
+            return Result.fail("获取贡献榜失败");
+        }
+    }
+
+    /**
+     * 测试mq发送
+     */
+    @PostMapping("/pushMessage")
+    public Result<Boolean> pushMessage(@Param("id") int id) {
+        rocketMQTemplate.convertAndSend("test-topic", "鸡翅早上好" + id);
+        return Result.ok(true);
+    }
+
+
 }

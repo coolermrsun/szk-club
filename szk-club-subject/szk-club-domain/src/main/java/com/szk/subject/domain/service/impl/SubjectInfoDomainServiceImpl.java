@@ -1,23 +1,31 @@
 package com.szk.subject.domain.service.impl;
 
 import com.alibaba.fastjson.JSON;
+import com.baomidou.mybatisplus.extension.plugins.pagination.Page;
 import com.szk.subject.common.entity.PageResult;
 import com.szk.subject.common.enums.IsDeletedFlagEnum;
+import com.szk.subject.common.util.IdWorkerUtil;
+import com.szk.subject.common.util.LoginUtil;
+import com.szk.subject.domain.convert.SubjectCategoryConverter;
 import com.szk.subject.domain.convert.SubjectInfoConverter;
+import com.szk.subject.domain.entity.SubjectCategoryBO;
+import com.szk.subject.domain.entity.SubjectInfoBO;
 import com.szk.subject.domain.entity.SubjectOptionBO;
 import com.szk.subject.domain.handler.subject.SubjectTypeHandler;
 import com.szk.subject.domain.handler.subject.SubjectTypeHandlerFactory;
+import com.szk.subject.domain.redis.RedisUtil;
+import com.szk.subject.domain.service.SubjectCategoryDomainService;
 import com.szk.subject.domain.service.SubjectInfoDomainService;
-import com.szk.subject.infra.basic.entity.SubjectInfo;
-import com.szk.subject.infra.basic.entity.SubjectLabel;
-import com.szk.subject.infra.basic.entity.SubjectMapping;
-import com.szk.subject.infra.basic.service.SubjectInfoService;
-import com.szk.subject.infra.basic.service.SubjectLabelService;
-import com.szk.subject.infra.basic.service.SubjectMappingService;
+import com.szk.subject.domain.service.SubjectLikedDomainService;
+import com.szk.subject.infra.basic.entity.*;
+import com.szk.subject.infra.basic.service.*;
+import com.szk.subject.infra.entity.UserInfo;
+import com.szk.subject.infra.rpc.UserRpc;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.data.redis.core.ZSetOperations;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-import com.szk.subject.domain.entity.SubjectInfoBO;
+import org.springframework.util.CollectionUtils;
 
 import javax.annotation.Resource;
 import java.util.*;
@@ -34,10 +42,22 @@ public class SubjectInfoDomainServiceImpl implements SubjectInfoDomainService {
     private SubjectMappingService subjectMappingService;
 
     @Resource
+    private SubjectLabelService subjectLabelService;
+
+    @Resource
     private SubjectTypeHandlerFactory subjectTypeHandlerFactory;
 
     @Resource
-    private SubjectLabelService subjectLabelService;
+    private SubjectEsService subjectEsService;
+
+    @Resource
+    private SubjectLikedDomainService subjectLikedDomainService;
+
+    @Resource
+    private UserRpc userRpc;
+
+    @Resource
+    private RedisUtil redisUtil;
 
     private static final String RANK_KEY = "subject_rank";
 
@@ -67,18 +87,18 @@ public class SubjectInfoDomainServiceImpl implements SubjectInfoDomainService {
             });
         });
         subjectMappingService.batchInsert(mappingList);
-//        //同步到es
-//        SubjectInfoEs subjectInfoEs = new SubjectInfoEs();
-//        subjectInfoEs.setDocId(new IdWorkerUtil(1, 1, 1).nextId());
-//        subjectInfoEs.setSubjectId(subjectInfo.getId());
-//        subjectInfoEs.setSubjectAnswer(subjectInfoBO.getSubjectAnswer());
-//        subjectInfoEs.setCreateTime(new Date().getTime());
-//        subjectInfoEs.setCreateUser("鸡翅");
-//        subjectInfoEs.setSubjectName(subjectInfo.getSubjectName());
-//        subjectInfoEs.setSubjectType(subjectInfo.getSubjectType());
-//        subjectEsService.insert(subjectInfoEs);
-//        //redis放入zadd计入排行榜
-//        redisUtil.addScore(RANK_KEY, LoginUtil.getLoginId(), 1);
+        //同步到es
+        SubjectInfoEs subjectInfoEs = new SubjectInfoEs();
+        subjectInfoEs.setDocId(new IdWorkerUtil(1, 1, 1).nextId());
+        subjectInfoEs.setSubjectId(subjectInfo.getId());
+        subjectInfoEs.setSubjectAnswer(subjectInfoBO.getSubjectAnswer());
+        subjectInfoEs.setCreateTime(new Date().getTime());
+        subjectInfoEs.setCreateUser("鸡翅");
+        subjectInfoEs.setSubjectName(subjectInfo.getSubjectName());
+        subjectInfoEs.setSubjectType(subjectInfo.getSubjectType());
+        subjectEsService.insert(subjectInfoEs);
+        //redis放入zadd计入排行榜
+        redisUtil.addScore(RANK_KEY, LoginUtil.getLoginId(), 1);
     }
 
     @Override
@@ -124,9 +144,53 @@ public class SubjectInfoDomainServiceImpl implements SubjectInfoDomainService {
         List<SubjectLabel> labelList = subjectLabelService.batchQueryById(labelIdList);
         List<String> labelNameList = labelList.stream().map(SubjectLabel::getLabelName).collect(Collectors.toList());
         bo.setLabelName(labelNameList);
-//        bo.setLiked(subjectLikedDomainService.isLiked(subjectInfoBO.getId().toString(), LoginUtil.getLoginId()));
-//        bo.setLikedCount(subjectLikedDomainService.getLikedCount(subjectInfoBO.getId().toString()));
-//        assembleSubjectCursor(subjectInfoBO, bo);
+        bo.setLiked(subjectLikedDomainService.isLiked(subjectInfoBO.getId().toString(), LoginUtil.getLoginId()));
+        bo.setLikedCount(subjectLikedDomainService.getLikedCount(subjectInfoBO.getId().toString()));
+        assembleSubjectCursor(subjectInfoBO, bo);
         return bo;
     }
+
+    private void assembleSubjectCursor(SubjectInfoBO subjectInfoBO, SubjectInfoBO bo) {
+        Long categoryId = subjectInfoBO.getCategoryId();
+        Long labelId = subjectInfoBO.getLabelId();
+        Long subjectId = subjectInfoBO.getId();
+        if (Objects.isNull(categoryId) || Objects.isNull(labelId)) {
+            return;
+        }
+        Long nextSubjectId = subjectInfoService.querySubjectIdCursor(subjectId, categoryId, labelId, 1);
+        bo.setNextSubjectId(nextSubjectId);
+        Long lastSubjectId = subjectInfoService.querySubjectIdCursor(subjectId, categoryId, labelId, 0);
+        bo.setLastSubjectId(lastSubjectId);
+    }
+
+    @Override
+    public PageResult<SubjectInfoEs> getSubjectPageBySearch(SubjectInfoBO subjectInfoBO) {
+        SubjectInfoEs subjectInfoEs = new SubjectInfoEs();
+        subjectInfoEs.setPageNo(subjectInfoBO.getPageNo());
+        subjectInfoEs.setPageSize(subjectInfoBO.getPageSize());
+        subjectInfoEs.setKeyWord(subjectInfoBO.getKeyWord());
+        return subjectEsService.querySubjectList(subjectInfoEs);
+    }
+
+    @Override
+    public List<SubjectInfoBO> getContributeList() {
+        Set<ZSetOperations.TypedTuple<String>> typedTuples = redisUtil.rankWithScore(RANK_KEY, 0, 5);
+        if (log.isInfoEnabled()) {
+            log.info("getContributeList.typedTuples:{}", JSON.toJSONString(typedTuples));
+        }
+        if (CollectionUtils.isEmpty(typedTuples)) {
+            return Collections.emptyList();
+        }
+        List<SubjectInfoBO> boList = new LinkedList<>();
+        typedTuples.forEach((rank -> {
+            SubjectInfoBO subjectInfoBO = new SubjectInfoBO();
+            subjectInfoBO.setSubjectCount(rank.getScore().intValue());
+            UserInfo userInfo = userRpc.getUserInfo(rank.getValue());
+            subjectInfoBO.setCreateUser(userInfo.getNickName());
+            subjectInfoBO.setCreateUserAvatar(userInfo.getAvatar());
+            boList.add(subjectInfoBO);
+        }));
+        return boList;
+    }
+
 }

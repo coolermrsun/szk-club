@@ -4,16 +4,21 @@
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
-        <option value="$PROJECT_DIR$/szk-club-subject/pom.xml" />
-        <option value="$PROJECT_DIR$/szk-club-subject/szk-club-application/pom.xml" />
+        <option value="$PROJECT_DIR$/asyncTool/pom.xml" />
+        <option value="$PROJECT_DIR$/szk-club-wx/pom.xml" />
+        <option value="$PROJECT_DIR$/szk-club-gen/pom.xml" />
         <option value="$PROJECT_DIR$/szk-club-oss/pom.xml" />
         <option value="$PROJECT_DIR$/szk-club-auth/pom.xml" />
+        <option value="$PROJECT_DIR$/szk-club-circle/pom.xml" />
         <option value="$PROJECT_DIR$/szk-club-gateway/pom.xml" />
-        <option value="$PROJECT_DIR$/szk-club-wx/pom.xml" />
+        <option value="$PROJECT_DIR$/szk-club-subject/pom.xml" />
+        <option value="$PROJECT_DIR$/szk-club-practice/pom.xml" />
+        <option value="$PROJECT_DIR$/szk-club-interview/pom.xml" />
+        <option value="$PROJECT_DIR$/szk-club-common-starter/pom.xml" />
       </list>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_23" default="true" project-jdk-name="openjdk-23" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" default="true" project-jdk-name="corretto-1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/out" />
   </component>
 </project>

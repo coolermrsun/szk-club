@@ -5,14 +5,14 @@ import lombok.Data;
 import java.io.Serializable;
 
 /**
- * 题目答案DTO
+ * 题目答案dto
  *
- * @author makejava
- * @since 2025-02-17 15:57:10
+ * @author: ChickenWing
+ * @date: 2023/10/5
  */
 @Data
 public class SubjectAnswerBO implements Serializable {
-    private static final long serialVersionUID = 802124656573658600L;
+
     /**
      * 答案选项标识
      */
@@ -27,5 +27,6 @@ public class SubjectAnswerBO implements Serializable {
      * 是否正确
      */
     private Integer isCorrect;
+
 }
 

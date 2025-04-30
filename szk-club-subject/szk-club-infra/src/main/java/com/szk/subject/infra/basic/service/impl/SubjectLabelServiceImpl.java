@@ -1,7 +1,7 @@
 package com.szk.subject.infra.basic.service.impl;
 
 import com.szk.subject.infra.basic.entity.SubjectLabel;
-import com.szk.subject.infra.basic.mapper.SubjectLabelMapper;
+import com.szk.subject.infra.basic.mapper.SubjectLabelDao;
 import com.szk.subject.infra.basic.service.SubjectLabelService;
 import org.springframework.stereotype.Service;
 
@@ -12,12 +12,12 @@ import java.util.List;
  * 题目标签表(SubjectLabel)表服务实现类
  *
  * @author makejava
- * @since 2025-02-16 20:13:04
+ * @since 2023-10-03 21:50:31
  */
 @Service("subjectLabelService")
 public class SubjectLabelServiceImpl implements SubjectLabelService {
     @Resource
-    private SubjectLabelMapper subjectLabelMapper;
+    private SubjectLabelDao subjectLabelDao;
 
     /**
      * 通过ID查询单条数据
@@ -27,7 +27,7 @@ public class SubjectLabelServiceImpl implements SubjectLabelService {
      */
     @Override
     public SubjectLabel queryById(Long id) {
-        return this.subjectLabelMapper.queryById(id);
+        return this.subjectLabelDao.queryById(id);
     }
 
     /**
@@ -38,7 +38,7 @@ public class SubjectLabelServiceImpl implements SubjectLabelService {
      */
     @Override
     public int insert(SubjectLabel subjectLabel) {
-        return this.subjectLabelMapper.insert(subjectLabel);
+        return this.subjectLabelDao.insert(subjectLabel);
     }
 
     /**
@@ -49,7 +49,7 @@ public class SubjectLabelServiceImpl implements SubjectLabelService {
      */
     @Override
     public int update(SubjectLabel subjectLabel) {
-        return this.subjectLabelMapper.update(subjectLabel);
+        return this.subjectLabelDao.update(subjectLabel);
     }
 
     /**
@@ -60,16 +60,16 @@ public class SubjectLabelServiceImpl implements SubjectLabelService {
      */
     @Override
     public boolean deleteById(Long id) {
-        return this.subjectLabelMapper.deleteById(id) > 0;
+        return this.subjectLabelDao.deleteById(id) > 0;
     }
 
     @Override
     public List<SubjectLabel> batchQueryById(List<Long> labelIdList) {
-        return this.subjectLabelMapper.batchQueryById(labelIdList);
+        return this.subjectLabelDao.batchQueryById(labelIdList);
     }
 
     @Override
     public List<SubjectLabel> queryByCondition(SubjectLabel subjectLabel) {
-        return this.subjectLabelMapper.queryByCondition(subjectLabel);
+        return this.subjectLabelDao.queryByCondition(subjectLabel);
     }
 }

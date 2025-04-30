@@ -76,7 +76,7 @@ public class AuthUserDomainServiceImpl implements AuthUserDomainService {
             authUser.setPassword(SaSecureUtil.md5BySalt(authUser.getPassword(), salt));
         }
         if (StringUtils.isBlank(authUser.getAvatar())) {
-            authUser.setAvatar("http://117.72.10.84:9000/user/icon/微信图片_20231203153718(1).png");
+            authUser.setAvatar("http://124.70.93.22:9000/user/icon/微信图片_20231203153718(1).png");
         }
         if (StringUtils.isBlank(authUser.getNickName())) {
             authUser.setNickName("鸡翅粉丝");

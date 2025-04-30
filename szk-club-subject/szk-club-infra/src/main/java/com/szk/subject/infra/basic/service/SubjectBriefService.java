@@ -1,13 +1,12 @@
 package com.szk.subject.infra.basic.service;
 
-
 import com.szk.subject.infra.basic.entity.SubjectBrief;
 
 /**
  * 简答题(SubjectBrief)表服务接口
  *
  * @author makejava
- * @since 2025-02-17 16:01:14
+ * @since 2023-10-05 21:29:22
  */
 public interface SubjectBriefService {
 
@@ -18,6 +17,7 @@ public interface SubjectBriefService {
      * @return 实例对象
      */
     SubjectBrief queryById(Long id);
+
     /**
      * 新增数据
      *
@@ -42,5 +42,9 @@ public interface SubjectBriefService {
      */
     boolean deleteById(Long id);
 
+    /**
+     * 条件查询
+     */
     SubjectBrief queryByCondition(SubjectBrief subjectBrief);
+
 }

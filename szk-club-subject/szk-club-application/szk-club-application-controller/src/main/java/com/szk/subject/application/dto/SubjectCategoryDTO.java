@@ -6,14 +6,13 @@ import java.io.Serializable;
 import java.util.List;
 
 /**
- * 题目分类(SubjectCategory)实体类
+ * 题目分类
  *
- * @author makejava
- * @since 2025-02-12 14:26:50
+ * @author: ChickenWing
+ * @date: 2023/10/3
  */
 @Data
 public class SubjectCategoryDTO implements Serializable {
-    private static final long serialVersionUID = 281213603287698155L;
 
     /**
      * 主键
@@ -49,4 +48,6 @@ public class SubjectCategoryDTO implements Serializable {
      * 标签信息
      */
     private List<SubjectLabelDTO> labelDTOList;
+
 }
+

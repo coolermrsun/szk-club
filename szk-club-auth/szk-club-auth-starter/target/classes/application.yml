@@ -7,10 +7,10 @@ spring:
   messages:
     encoding: UTF-8
   datasource:
-    username: superuser
+    username: root
     password: SfLHbOCz+kRG2GlLCE2Gpw2nzo6uWNiidOWdUm4kXmVBwWZyPlk12GORd07FqUUrrlV+LsmKJ/sp2zajxgjUUA==
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://121.41.111.25:3306/szk?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&&useSSL=false
+    url: jdbc:mysql://124.70.93.22:3306/szk?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&&useSSL=false
     type: com.alibaba.druid.pool.DruidDataSource
     druid:
       initial-size: 20
@@ -36,7 +36,7 @@ spring:
     # Redis数据库索引（默认为0）
     database: 1
     # Redis服务器地址
-    host: 121.41.111.25
+    host: 124.70.93.22
     # Redis服务器连接端口
     port: 6379
     # Redis服务器连接密码（默认为空）

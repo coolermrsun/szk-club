@@ -1,7 +1,7 @@
 package com.szk.subject.infra.basic.service.impl;
 
 import com.szk.subject.infra.basic.entity.SubjectRadio;
-import com.szk.subject.infra.basic.mapper.SubjectRadioMapper;
+import com.szk.subject.infra.basic.mapper.SubjectRadioDao;
 import com.szk.subject.infra.basic.service.SubjectRadioService;
 import org.springframework.stereotype.Service;
 
@@ -12,12 +12,12 @@ import java.util.List;
  * 单选题信息表(SubjectRadio)表服务实现类
  *
  * @author makejava
- * @since 2025-02-17 16:12:17
+ * @since 2023-10-05 21:30:19
  */
 @Service("subjectRadioService")
 public class SubjectRadioServiceImpl implements SubjectRadioService {
     @Resource
-    private SubjectRadioMapper subjectRadioDao;
+    private SubjectRadioDao subjectRadioDao;
 
     /**
      * 通过ID查询单条数据
@@ -29,7 +29,6 @@ public class SubjectRadioServiceImpl implements SubjectRadioService {
     public SubjectRadio queryById(Long id) {
         return this.subjectRadioDao.queryById(id);
     }
-
 
     /**
      * 新增数据
@@ -47,6 +46,7 @@ public class SubjectRadioServiceImpl implements SubjectRadioService {
     public void batchInsert(List<SubjectRadio> subjectRadioList) {
         this.subjectRadioDao.insertBatch(subjectRadioList);
     }
+
     /**
      * 修改数据
      *

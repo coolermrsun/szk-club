@@ -1,7 +1,7 @@
 package com.szk.subject.infra.basic.service.impl;
 
 import com.szk.subject.infra.basic.entity.SubjectBrief;
-import com.szk.subject.infra.basic.mapper.SubjectBriefMapper;
+import com.szk.subject.infra.basic.mapper.SubjectBriefDao;
 import com.szk.subject.infra.basic.service.SubjectBriefService;
 import org.springframework.stereotype.Service;
 
@@ -11,12 +11,12 @@ import javax.annotation.Resource;
  * 简答题(SubjectBrief)表服务实现类
  *
  * @author makejava
- * @since 2025-02-17 16:01:14
+ * @since 2023-10-05 21:29:22
  */
 @Service("subjectBriefService")
 public class SubjectBriefServiceImpl implements SubjectBriefService {
     @Resource
-    private SubjectBriefMapper subjectBriefMapper;
+    private SubjectBriefDao subjectBriefDao;
 
     /**
      * 通过ID查询单条数据
@@ -26,7 +26,7 @@ public class SubjectBriefServiceImpl implements SubjectBriefService {
      */
     @Override
     public SubjectBrief queryById(Long id) {
-        return this.subjectBriefMapper.queryById(id);
+        return this.subjectBriefDao.queryById(id);
     }
 
     /**
@@ -37,7 +37,7 @@ public class SubjectBriefServiceImpl implements SubjectBriefService {
      */
     @Override
     public SubjectBrief insert(SubjectBrief subjectBrief) {
-        this.subjectBriefMapper.insert(subjectBrief);
+        this.subjectBriefDao.insert(subjectBrief);
         return subjectBrief;
     }
 
@@ -49,7 +49,7 @@ public class SubjectBriefServiceImpl implements SubjectBriefService {
      */
     @Override
     public SubjectBrief update(SubjectBrief subjectBrief) {
-        this.subjectBriefMapper.update(subjectBrief);
+        this.subjectBriefDao.update(subjectBrief);
         return this.queryById(subjectBrief.getId());
     }
 
@@ -61,11 +61,11 @@ public class SubjectBriefServiceImpl implements SubjectBriefService {
      */
     @Override
     public boolean deleteById(Long id) {
-        return this.subjectBriefMapper.deleteById(id) > 0;
+        return this.subjectBriefDao.deleteById(id) > 0;
     }
 
     @Override
     public SubjectBrief queryByCondition(SubjectBrief subjectBrief) {
-        return this.subjectBriefMapper.queryAllByLimit(subjectBrief);
+        return this.subjectBriefDao.queryAllByLimit(subjectBrief);
     }
 }
